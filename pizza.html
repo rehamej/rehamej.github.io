@@ -1,0 +1,842 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+<html xmlns= "http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html ; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width , intial-scale=1.0" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pizza website</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+
+* {
+
+margin: 0;
+padding: 0;
+border: 0;
+border-spacing: 0;
+font-family: 'Phudu', cursive;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(153, 149, 149, 0.452);
+}
+table{
+    border-spacing: 0;
+}
+td{
+    padding: 0;
+}
+img{
+    border: 0;
+}
+
+.wrapper{
+    width: 100%;
+    table-layout: fixed; 
+    padding-bottom: 60px; /*لين هنا الاساس ما يتغير شي-*/
+    background-color: #f3f0f0e8 ;
+}
+
+.main{
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgba(245, 241, 220, 0.685);
+    font-family: 'Phudu', cursive;
+    font-size: 45px;
+    /* color: #b793d2; */
+    color: #382529f5;
+    /* font-style: italic; */
+    text-align: left;
+    
+}
+
+.back{
+    background-image: url(https://i.ibb.co/VHrMK9v/43d2c549638d483b98eadf13fb124fdc.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100%; height: 500px;
+}
+
+.list > li  {
+    display: inline-flex; 
+    list-style: none; 
+    margin: 0 auto;
+    font-size: 1.5vw;
+    text-align: right;
+    position: relative; top: -180px; left: -40px;
+    padding: 10px;
+}
+
+.list > li > a {
+  text-decoration: none;
+  color: #0d0c22;
+} 
+
+
+
+button {
+  font-family: inherit;
+  font-size: 1.3vw;
+  background: linear-gradient(to bottom, rgb(250, 186, 67) 0%,rgb(248, 178, 46) 100%);
+  color: white;
+  padding: 0.6em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+button svg {
+  width: 8px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+button .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+button:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover svg {
+  transform: rotate(45deg);
+}
+
+
+h1 span {
+font-size: 13px ;
+transform-origin: bottom;
+height: 300px;
+width: 50px;
+left: 0;
+top: 30;
+position: absolute;
+}
+.c1 {
+  transform: rotate(-70deg);
+    color: #949393;
+    left: -62px;
+    top: 159px;
+}
+.c2 {
+transform: rotate(-59deg);
+color: #949393;
+left: -60px;
+top: 128px;
+}
+.c3 {
+  left: -44px;
+    transform: rotate(-40deg);
+    color: #949393;
+    top: 153px;
+}
+.c4 {
+  left: -44px;
+    top: 160px;
+    transform: rotate(-22deg);
+    color: #949393;
+}
+.c5 {
+  top: 160px;
+    left: -44px;
+    transform: rotate(0deg);
+    color: #949393;
+}
+.c6 {
+  top: 160px;
+    transform: rotate(11deg);
+    color: #949393;
+    left: -17px;
+}
+.c7 {
+  left:  4px;
+  transform: rotate(25deg);
+    color: #949393;
+    top: 165px;
+}
+.c8 {
+  left: -25px;
+    transform: rotate(47deg);
+    color: #949393;
+    top: 150px;
+}
+.c9 {
+  color: #949393;
+    left: -19px;
+    transform: rotate(66deg);
+    top: 151px;
+}
+
+.c1:hover{
+   color:#f9b83d ; } .c2:hover{  color:#f9b83d ; } .c3:hover{  color:#f9b83d ; }.c4:hover{  color:#f9b83d ; } .c5:hover{  color:#f9b83d ; } .c6:hover{  color:#f9b83d ; } .c7:hover{  color:#f9b83d ; } .c8:hover{  color:#f9b83d ; } .c9:hover{  color:#f9b83d ; }
+
+.logo{
+  position: relative;
+  bottom: -180px;
+  padding-top: 0px;
+}
+
+.back-two{
+  background-image: url(https://i.ibb.co/CnxF4Y9/dd3ff4bbb2654558a62fe69bee3386a7.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100%; height: 500px;
+}
+
+
+
+
+/* this is a recreation of twitter search in css */
+.form {
+  --input-text-color: #fff;
+  --input-bg-color: #0a090a;
+  --focus-input-bg-color: transparent;
+  --text-color: #949faa;
+  --active-color: #1b9bee;
+  --width-of-input: 200px;
+  --inline-padding-of-input: 1.2em;
+  --gap: 0.9rem;
+}
+/* form style */
+.form {
+  font-size: 1.3vw;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: var(--width-of-input);
+  position: relative;
+  isolation: isolate;
+}
+/* a fancy bg for showing background and border when focus. */
+.fancy-bg {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background: var(--input-bg-color);
+  border-radius: 30px;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* label styling */
+label {
+  width: 100%;
+  padding: 0.8em;
+  height: 18px;
+  padding-inline: var(--inline-padding-of-input);
+  display: flex;
+  align-items: center;
+}
+
+.search,.close-btn {
+  position: absolute;
+}
+/* styling search-icon */
+.search {
+  fill: var(--text-color);
+  left: var(--inline-padding-of-input);
+}
+/* svg -- size */
+svg {
+  width: 17px;
+  display: block;
+}
+/* styling of close button */
+.close-btn {
+  border: none;
+  right: var(--inline-padding-of-input);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 0%;
+  background: var(--active-color);
+  opacity: 0;
+  visibility: hidden;
+}
+/* styling of input */
+.input {
+  color: var(--input-text-color);
+  width: 100%;
+  margin-inline: min(2em,calc(var(--inline-padding-of-input) + var(--gap)));
+  background: none;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-color)
+}
+
+/* showing close button when typing */
+.input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+.l5:hover{
+   color:#f9b83d ; } .l6:hover{  color:#f9b83d ; } .l7:hover{  color:#f9b83d ; }.l8:hover{  color:#f9b83d ; } 
+
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+
+  width: 195px;
+  top: 115%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip:hover .tool {
+  visibility: visible;
+}
+
+.tooltip .tool {
+  visibility: hidden;
+  width: 120px;
+
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+
+  width: 195px;
+  bottom: 47%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+
+.back-three{
+  background-image: url(https://i.ibb.co/849GJyb/unnamed.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100%; height: 383px;
+}
+
+.i1:hover{
+   color:#f9b83d ; }
+
+   .back-four{
+  background-image: url(https://i.ibb.co/nLhgPJ5/a56af7a92934440e96c4b831879ea978.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100%; height: 471px;
+}
+
+.back-five{
+  background-image: url(https://i.ibb.co/YX7vLCJ/91ce8fb4545544b7b28b0d6378f6365d.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100%; height: 210px;
+}
+
+
+
+
+
+
+
+
+</style> <!--ADD </html> AT THE END-->
+</head>
+
+<body>
+    <center class="wrapper" >
+        <table class="main" style="width: 100%; max-width: 1000px;">
+
+<!-- LOGO SEC -->
+            <table class="back" style="width: 1000px; max-width: 100%; ">
+                <tr>
+
+                    <td class="list" style="padding: 0px;width: 100%; max-width: 1000px; text-align: right;">
+                        
+                  <div class="logo">
+                        <ul class="list" >
+                            <li><a target="_blank" href="#" style="display: inline; list-style: none; margin: 0 auto; text-decoration: none;font-size: 1.2vw;">our menu</a></li>
+                            <li><a target="_blank"  href="#" style="display: inline; list-style: none; margin: 0 auto; text-decoration: none;font-size: 1.2vw;">catering</a> </li>
+                            <li><a target="_blank"  href="#" style="display: inline; list-style: none; margin: 0 auto; text-decoration: none;font-size: 1.2vw;">careers</a></li>
+                            <li><a target="_blank"  href="#" style="display: inline; list-style: none; margin: 0 auto; text-decoration: none;font-size: 1.2vw;">rewards</a></li>
+                            <li><a target="_blank"  href="#" style="display: inline; list-style: none; margin: 0 auto; text-decoration: none;font-size: 1.2vw;">franchise</a></li>
+                            <li><a target="_blank"  href="#" style="display: inline; list-style: none; margin: 0 auto; text-decoration: none;font-size: 1.2vw;">sing in</a></li>
+                            <li><a target="_blank"  href="#" style="display: inline; list-style: none; margin: 0 auto; text-decoration: none;">
+                               
+                                <button class="button">
+                                    order now
+                                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">
+                                       <img width="25px" src="https://i.ibb.co/mHPfcWn/370cfcdb9cb0499da99a9d351d4ece71.png" alt="" style="padding-right: 5px;"> 
+                                    </svg>
+                                  </button>
+
+                            </a></li>
+                        </ul>
+                        <!-- <div class="one"><a href="">1</a></div>
+                        <div><a href="">2</a></div>
+                        <div><a href="">3</a></div>
+                        <div><a href="">4</a></div>
+                        <div><a href="">5</a></div>
+                        <div><a href="">6</a></div> -->
+                    
+       
+ <!-- CERCUL SEC -->
+                    <p style="text-align: center; position: relative; top: -150px;font-size: 1vw; max-width: 100%; width: 1000px; padding-bottom: 25px;">
+                    select size <br> <br>
+                     
+                     <a href="#" target="_blank" style="text-decoration: none; color: #0d0c22; background-color: #b9b9b9b2; border-radius: 150px ; padding: 7px 13px;">s</a>
+                     <a href="#" target="_blank" style="text-decoration: none; color: #0d0c22; background-color: #b9b9b9b2; border-radius: 150px ; padding: 7px 13px;">m</a>
+                     <a href="#" target="_blank" style="text-decoration: none; color: #0d0c22; background-color: #b9b9b9b2; border-radius: 150px ; padding: 7px 13px;">l</a>
+                     <a href="#" target="_blank" style="text-decoration: none; color: #0d0c22; background-color: #b9b9b9b2; border-radius: 170px ; padding: 9px 13px;">xl</a>
+
+                    </p>
+
+                  </div>
+                    
+
+                    
+                    <h1 style="position: relative; left: 500px; bottom: 90px; width: 10px;">
+                        <span class="c1">veggie</span> <br>
+                        <span class="c2">bacon &bbq</span> <br>
+                        <span class="c3">chicken</span> <br>
+                        <span class="c4">hawaiian</span> <br>
+                        <span class="c5">sausage</span><br>
+                        <span class="c6">magherita</span><br>
+                        <span class="c7">crapsticks</span><br>
+                        <span class="c8">pepporoni</span><br>
+                        <span class="c9">cocktail</span><br>
+                        </h1>
+
+
+                    <a href="#" target="_blank" style=" text-decoration: none;"> <button style="background: rgba(0, 0, 0, 0.63) ; color:#ffffffdc ; position: relative; top: -89px; left: 423px;">
+                      order online                    
+                    </button>
+                    </a>
+
+                    </td>
+
+                </tr>
+            </table>
+
+
+ <!-- LOCATION SEARCH SEC -->
+             <table class="back-two" style="width: 1000px; max-width: 1000px; margin-top: -33px;">
+              <tr>
+                <td style="width: 100%; max-width: 1000px;">
+                  <a href="#" target="_blank" style="text-decoration: none;"> <button style=" position: relative; top: -129px ; left: 597px; background: rgb(201 198 198) ; color: #c14f19; ">
+                    order online
+                  </button>
+                  </a>
+                </td>
+
+                <td style="    top: -60px;position: relative; left: -409px;">
+                  <!-- <input type="text" required placeholder="city, zip code" 
+                  style=" padding: 7px;top: -164px;position: relative;background-color: #0a090a; left: -430px;
+                  font-size: 1.3vw;"> <img src="https://i.ibb.co/MCpTpcR/d9f4626f6ac8420aa5f790ba1292693e.png" width="20px" alt=""> -->
+
+
+                  <form class="form" style=" top: -47px;position: relative; left: 195px;">
+                    <label for="search">
+                        <input class="input" type="text" required="" placeholder="city, zip code" id="search">
+                        <div class="fancy-bg"></div>
+                        <div class="search">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f738ji r-bnwqim r-1plcrui r-lrvibr">
+                                <g>
+                                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <button class="close-btn" type="reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </label>
+                </form>
+
+                <h1 style= "position: relative ; top: -15px ; left: 132px; width: 400px;font-weight: bolder;">visit any of our LOCATIONs</h1>
+
+
+                <tr> 
+                  <!-- حطيت تي ار لحالها بدون تي دي عشان لما اسوي كدا ما يصير يحرك اللي فوقو -->
+
+                   
+ <!-- THE LINE SEC -->
+                  <span style="position: relative ; top: 220.5px; left: 183px; display: flex;width: 1000px; max-width: 1000px;">
+
+
+                    <hr style="background-color:#949393; height: 3px; width: 17cm; display: inline-block; margin-bottom: -1px;">
+
+
+                    <p  class="location">
+                    <hr class="l1" style="background-color: #0a090a; height: 5px; width: 5px; display: inline-block; border-radius: 50%; position: relative; top: -1px; left: -2.5cm;">
+                    <hr  class="l2" style="background-color: #0a090a; height: 5px; width: 5px; display: inline-block; border-radius: 50%; position: relative; top: -1px; left: -6.5cm;">
+                    <hr  class="l3" style="background-color: #0a090a; height: 5px; width: 5px; display: inline-block; border-radius: 50%; position: relative; top: -1px;left: -10.5cm;">
+                    <hr  class="l4" style="background-color: #0a090a; height: 5px; width: 5px; display: inline-block; border-radius: 50%; position: relative; top: -1px;left: -14.5cm;">
+                   </p>
+       
+                   </span>
+ 
+ 
+                   
+
+                   <td style="display: inline-flex;">  <!-- الديسبلاي دا هنا خلا كل الكلام جمب بعض -->
+
+                    <div class="tooltip">
+                    <p class="l5" style="display:inline-flex;position: relative; top: -192px; left: 240px;padding-right: 73px; font-weight:700;">
+                      alden bridge
+                    </p>
+                      <span class="tooltiptext"><h3>alden bridge</h3> 8000 reseaarch forest 340 <br> <br> <h3>hourse of operation</h3> sun-thu 11:00am-9:00pm <br> fri-sat 11:00am-10:00pm <br><span style="color: #f9b83d;">8325850999</span>  </span>
+                          
+
+                      <div  class="tool">
+                        <img src="https://www.google.com/maps/d/thumbnail?mid=1Hn1qqqqK7-4-E4bsupmHPk0D0UA" alt="" width="200px" style="position: absolute; bottom: -603px; right: -246px;">
+                        </div>
+                      </div>
+
+
+
+                    <div class="tooltip">
+                      <p  class="l6" style="display:inline-flex;;position: relative; top: -192px; left: 240px;padding-right: 73px; font-weight:700;">
+                        rayford
+                      </p>
+                        <span class="tooltiptext"><h3>rayford</h3> 9600 road forest 540 <br> <br> <h3>hourse of operation</h3> sun-thu 11:00am-9:00pm <br> fri-sat 11:00am-10:00pm <br><span style="color: #f9b83d;">8325850999</span>  </span>
+                          
+
+                        <div  class="tool">
+                          <img src="https://www.google.com/maps/d/thumbnail?mid=1Hn1qqqqK7-4-E4bsupmHPk0D0UA" alt="" width="200px" style="position: absolute; bottom: -603px; right: -246px;">
+                          </div>
+                        </div>
+
+
+
+
+                      <div class="tooltip">
+                        <p  class="l7" style="display:inline-flex; ;position: relative; top: -192px; left: 240px;padding-right: 73px; font-weight:700;">
+                          creekside
+                        </p>
+                          <span class="tooltiptext"><h3>creekside</h3> 8650 bikini bottom 320 <br> <br> <h3>hourse of operation</h3> sun-thu 11:00am-9:00pm <br> fri-sat 11:00am-10:00pm <br><span style="color: #f9b83d;">8325850999</span>  </span>
+                          
+
+                        <div  class="tool">
+                          <img src="https://www.google.com/maps/d/thumbnail?mid=1Hn1qqqqK7-4-E4bsupmHPk0D0UA" alt="" width="200px" style="position: absolute; bottom: -603px; right: -246px;">
+                          </div>
+                        </div>  
+
+                        
+
+                        <div class="tooltip">
+
+                          <p  class="l8" style="display: inline-flex;position: relative; top: -192px; left: 240px; font-weight:700;">
+                            woodforest
+                          </p>
+                            <span class="tooltiptext"><h3>woodforest</h3> 9100 the woodland 040 <br> <br> <h3>hourse of operation</h3> sun-thu 11:00am-9:00pm <br> fri-sat 11:00am-10:00pm <br><span style="color: #f9b83d;">8325850999</span>  
+                          </span>
+                          
+
+                          <div  class="tool">
+                          <img src="https://www.google.com/maps/d/thumbnail?mid=1Hn1qqqqK7-4-E4bsupmHPk0D0UA" alt="" width="200px" style="position: absolute; bottom: -603px; right: -246px;">
+                          </div>
+                        </div>
+
+
+
+                        <!-- <div class="tooltip">
+                          <p  class="l8" style="display: inline-flex;position: relative; top: -222px; left: 240px; font-weight:700;">
+                            woodforest
+                          </p>
+                          <span class="tooltiptext">Tooltip text</span>
+                        </div> -->
+
+                   </td>
+                   
+                </tr>
+
+              </tr>
+            </table>  
+
+ <!-- OUR FULL MENU SEC -->
+
+         <table class="back-three"  style="width: 1000px; max-width: 1000px; margin-top: -9px;">
+
+         <tr style="width: 1000px; max-width: 100%; position: relative;bottom: -17px;">
+          <td>
+            <h1 style="text-align: center;">our full menu</h1>
+          </td> 
+         </tr>
+
+         <tr style="width: 1000px; max-width: 100%; position: relative;bottom: -30px;">
+          <td style="display: inline-flex;left: 135px; position: relative; padding-bottom: 10px;">
+
+            <h4 class="i1"  style="text-align: center; padding-left: 10px; position: relative; top: 3px;">
+             <img src="https://cdn-icons-png.flaticon.com/512/6978/6978255.png" alt="" style="width: 20px;position: relative;top: 3px;"> gourmet pizza
+            </h4>
+
+
+            <h4 class="i1"  style="text-align: center;padding-left: 30px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/1923/1923405.png" alt="" style="width: 25px;position: relative;top: 3px;"> crust pastas
+             </h4> 
+
+
+             <h4 class="i1"  style="text-align: center;padding-left: 30px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/2515/2515183.png" alt="" style="width: 25px;position: relative;top: 3px;"> starters & salads
+             </h4> 
+             
+             <h4 class="i1"  style="text-align: center;padding-left: 30px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/3081/3081949.png" alt="" style="width: 25px;position: relative;top: 3px;"> desserts
+             </h4> 
+             
+             <h4 class="i1" style="text-align: center;padding-left: 30px;">
+              <img src="https://icon-library.com/images/drink-icon/drink-icon-10.jpg" alt="" style="width: 25px;position: relative;top: 3px;"> drinks
+             </h4> 
+
+          </td>
+
+          
+         </tr>
+
+
+
+
+         <tr style="display: inline-flex; position: relative; right: -31px; top: 35px;"> 
+          <!-- right -9 -->
+
+         <td  style="display: inline-flex;left: 47px; position: relative; padding: 0px 10px;;">
+
+            <h3 style="text-align: center;"> <a href="#" target="_blank"><img src= "https://www.simplyrecipes.com/thmb/KRw_r32s4gQeOX-d07NWY1OlOFk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Homemade-Pizza-Dough-Lead-Shot-1c-c2b1885d27d4481c9cfe6f6286a64342.jpg" alt="" style="width: 200px ; border-radius: 5%"></a></h3>
+
+         </td>
+
+         <td  style="display: inline-flex;left: 47px; position: relative; padding: 0px 10px;">
+
+          <h3 style="text-align: center;"> <a href="#" target="_blank"><img src="https://static.phdvasia.com/sg1/menu/single/desktop_thumbnail_a153f084-6af0-4c43-9e82-be9bd2ceaf62.jpeg" alt="" style="width: 185px ; border-radius: 5%"></a></h3>
+
+       </td>
+
+       <td  style="display: inline-flex;left: 47px; position: relative; padding: 0px 10px;">
+
+        <h3 style="text-align: center;"> <a href="#" target="_blank"><img src="https://api.pizzahut.io/v1/content/en-ca/ca-1/images/side/side.caesar-salad.5b52ac96d853fffd0161b2b2d863c11e.1.jpg" alt="" style="width: 189px ; border-radius: 5%"></a></h3>
+
+     </td>
+
+     <td  style="display: inline-flex;left: 47px; position: relative; padding: 0px 10px;">
+
+      <h3 style="text-align: center;"> <a href="#" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQlJhM6Ww42YrWfpG82mBv5fJdhZvfX0334c102G26FJNGtCTXEdhZGtjHUb1hZ3DUJw&usqp=CAU" alt="" style="width: 184px ; border-radius: 5%"></a></h3>
+
+   </td>
+
+
+
+   <tr style="display: inline-flex; position: relative; right: 60px; top: 10px; padding:">
+
+
+    <td style="padding-right: 42px;"> 
+     <div   style="left: 165px; position: relative; padding: 30px 23px;background-color: white;text-align: center; border-radius: 5%; width: 123px;height: 41px;">
+      <h3>gourmet pizza</h3>  <h4 style="color:#e29a15;">starting 11$</h4>
+    </div>
+     
+    <td style="padding-right: 38px;"> 
+      <div   style="left: 165px; position: relative; padding: 30px 23px;background-color: white;text-align: center; border-radius: 5%;  width: 123px;height: 41px;">
+       <h3>crust pasta</h3>  <h4 style="color:#e29a15;">starting 11$</h4>
+     </div>
+
+
+       <td style="padding-right: 38px;"> 
+        <div   style="left: 165px; position: relative; padding: 30px 23px;background-color: white;text-align: center; border-radius: 5%; width: 123px;height: 41px;">
+         <h3 style="">salads</h3>  <h4 style="color:#e29a15;">starting 11$</h4>
+       </div>
+
+       <td style="padding-right: 38px;    width: 10px;"> 
+        <div   style="left: 165px; position: relative; padding: 30px 23px;background-color: white;text-align: center; border-radius: 5%; width: 123px;height: 41px;">
+         <h3>desserts</h3>  <h4 style="color:#e29a15;">starting 11$</h4>
+       </div>
+
+       
+
+       <div style="display: inline-flex; position: relative; right: 423px; top: -17px;">
+
+       <a href="#" target="_blank" style="text-decoration: none;    padding-right: 108px;"> <button style=" position: relative; background: #e29a15 ; color: white;  font-size: 12px; width: 101px; padding: 11px;">
+        order online
+      </button>
+      </a>
+ 
+      <a href="#" target="_blank" style="text-decoration: none;    padding-right: 108px;"> <button style=" position: relative; background: #e29a15 ; color: white;  font-size: 12px; width: 101px; padding: 11px;">
+        order online
+      </button>
+      </a>
+ 
+      <a href="#" target="_blank" style="text-decoration: none;    padding-right: 108px;"> <button style=" position: relative; background: #e29a15 ; color: white;  font-size: 12px; width: 101px; padding: 11px;">
+        order online
+      </button>
+      </a>
+
+      <a href="#" target="_blank" style="text-decoration: none;"> <button style=" position: relative; background: #e29a15 ; color: white;  font-size: 12px; width: 101px; padding: 11px;">
+        order online
+      </button>
+      </a>
+      </div>                                  
+         
+
+      </td></tr>
+         </tr>
+        </table >
+
+
+      <table class="back-four" style="width: 1000px; max-width: 1000px; margin-top: -9px;">
+        <tr>
+          <td style="width: 100%; max-width: 1000px; text-align: left;">
+            <div >
+            <h2 style="color: rgba(255, 255, 255, 0.76);font-weight: lighter;width: 266px;line-height: 41px;position: relative;left: 612px; bottom: 51px;">chicago style this crust pizza that even texans will love</h2>
+            <h5 style="color: rgba(255, 255, 255, 0.76);font-weight: lighter;width: 359px;line-height: 20px;position: relative;left: 612px; bottom: 35px;">crust pizza is the locally owned place for delicious,made from scratch pizzas served in an upscale,comfortable family-friendly enviroment</h5>
+            </div>
+          </td>
+        </tr>
+      </table>  
+
+
+      <table style="width: 1000px; max-width: 1000px; margin-top: -3px;" >
+        <tr style="width: 100%; max-width: 1000px;display: inline-flex;">
+
+          
+          <td style="background-color:rgb(228, 223, 223);width: 333.3px;padding: 41px 20px; height: 173px;">
+            <a href="#" target="_blank" style="text-decoration: none;"><img src="https://vmcogulf.com/en/wp-content/uploads/2017/05/catering-services-3.jpg" alt="" style=" border-radius: 60%; width: 84px; height: 84px;">
+            <div style="position:relative ;left: 96px; top: -85px;">
+              <h2 style=" color: #0a090ac0;font-weight:light; display: inline-flex;">catring & events</h2><br><br>
+            <h3  style=" color: #0a090ac0;font-weight:lighter; display: inline-flex; width: 206px; line-height: 30px;">crust pizza is now offering catring services foe schools , weddings and other events</h3> </div>
+          </a></td>
+
+
+            <td style="background-color:rgb(199, 192, 192);width: 333.3px;padding: 41px 20px; height: 173px;">
+              <a href="#" target="_blank" style="text-decoration: none;"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Pizza_baking_in_Wood-fired_oven.jpg" alt="" style=" border-radius: 60%; width: 84px; height: 84px;">
+              <div style="position:relative ;left: 96px; top: -85px;">
+                <h2 style=" color: #0a090ac0;font-weight:light; display: inline-flex;">work with us</h2><br><br>
+              </a><h3  style=" color: #0a090ac0;font-weight:lighter; display: inline-flex; width: 206px; line-height: 30px;">at crust pizza, our people are our assets. want to join our team?</h3> </div>
+            </td>
+            
+
+            <td style="background-color:rgb(177, 173, 173);width: 333.3px;padding: 41px 20px; height: 173px;">
+              <a href="#" target="_blank" style="text-decoration: none;"><img src="https://eiw39nyms9e.exactdn.com/wp-content/uploads/2019/09/IMG_3946-2-2.jpg?strip=all&lossy=1&ssl=1" alt="" style=" border-radius: 60%; width: 84px; height: 84px;">
+              <div style="position:relative ;left: 96px; top: -85px;">
+                <h2 style=" color: #0a090ac0;font-weight:light; display: inline-flex;width: 243px;">own a crust franchise</h2><br><br>
+              </a><h3  style=" color: #0a090ac0;font-weight:lighter; display: inline-flex; width: 206px; line-height: 30px;">crust pizza also offers restaurant proffionals and enterpreneurs the opportunity to opetate</h3> </div>
+            </td>
+
+
+        </tr>
+      </table>
+
+
+      <table class="back-five" style="width: 1000px; max-width: 1000px; margin-top: -9px;">
+        <tr>
+          <td style="width: 100%; max-width: 1000px; text-align: center;display: inline-flex; justify-content: center;">
+
+            <a href="#" target="_blank" style="text-decoration: none;"></a><h5 style="font-weight: light; padding: 10px; padding-top: 40px; width: 78px;">our menu</h5>
+
+            <a href="#" target="_blank" style="text-decoration: none;"></a><h5 style="font-weight: light; padding: 10px; padding-top: 40px;">catring</h5>
+
+            <a href="#" target="_blank" style="text-decoration: none;"></a><h5 style="font-weight: light; padding: 10px; padding-top: 40px;">press</h5>
+
+            <a href="#" target="_blank" style="text-decoration: none;"></a><h5 style="font-weight: light; padding: 10px; padding-top: 40px;">careers</h5>
+
+            <a href="#" target="_blank" style="text-decoration: none;"></a><h5 style="font-weight: light; padding: 10px; padding-top: 40px;">rewards</h5>
+
+            <a href="#" target="_blank" style="text-decoration: none;"></a><h5 style="font-weight: light; padding: 10px; padding-top: 40px;">franchise</h5>
+
+            <a href="#" target="_blank" style="text-decoration: none;"></a><h5 style="font-weight: light; padding: 10px; padding-top: 40px;width: 88px;">order online</h5>
+               
+
+          </td>
+        </tr>
+
+        <tr>
+          <td  style="width: 100%; max-width: 1000px; text-align: center;position: relative ; top: -25px;">
+
+            <h5>tell us how we're doing : <span style="color: #e29a15; font-weight: lighter;">owners@crustpizza.com</span></h5> 
+            <h5 style="padding: 15px;"> <a href="#" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-512.png" alt="" width="30px" style="padding-right: 5px; border-radius: 30%;"></a>        
+            <a href="#" target="_blank"><img src="https://louisville.edu/mcconnellcenter/images/facebook_logos_PNG19748.png/image" alt="" width="30px"style=" border-radius: 30%;"></a></h5>
+
+
+          </td>
+        </tr>
+
+        <tr>
+          <td style="width: 100%; max-width: 1000px; text-align: center;position: relative ; top: -36px; color:#7c7b7b; font-weight: lighter; font-size: ;">
+            <h6>crust pizza is the locally owned place for delicious,made from scratch pizzas served in an upscale <br> comfortable family-friendly enviroment
+
+            </h6></td>
+        </tr>
+      </table>
+
+
+
+
+
+
+        </table>  
+    </center>
+ <body>
+</html>
