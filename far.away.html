@@ -1,0 +1,865 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+ <!-- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width , intial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>far & away</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Wix+Madefor+Display&display=swap');
+
+* {
+
+margin: 0;
+padding: 0;
+border: 0;
+border-spacing: 0;
+
+
+
+}
+
+:root{
+    --main-padding:10px;
+}
+
+body {
+    margin: 0;
+    background-color:#d0c5b5;
+    font-family: 'Playfair Display', serif;
+}    
+
+img{
+    border: 0;
+}
+
+.container{
+    
+    margin: 0 auto;
+    display: grid;
+    /* height: 100vh; */
+    /* width: 100%;
+    max-width: 800px; */
+    background-color:#d0c5b5;
+    font-size: 45px;
+    color: #474747;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.07fr 0.1fr 1.0fr 1fr 1.5fr 0.6fr 1.3fr 1.5fr 1fr;
+    grid-template-areas:
+   "nav1 nav1 nav1 nav1"
+   "nav2 nav2 nav2 nav2" 
+   "main main main main"
+   "content1 content2 content3 content33"
+   "content4 content4 content4 content5"
+   "nav3 nav3 nav3 nav3" 
+   "content6 content6 content7 content7"
+   "content8 content9 content9 content9"
+   "footer footer footer footer"
+   /* "cont1 cont2 cont3 cont3" */
+   ;
+}
+
+.nav1{
+    grid-area: nav1;
+    font-size: 17px;
+    background-color:#d5c5ade8;
+    padding-top: var(--main-padding);
+    padding-bottom: 5px;
+    position: fixed;
+    width: -webkit-fill-available;
+}
+
+.nav2{
+    grid-area: nav2;
+    padding-top: var(--main-padding);
+    background-color:#b49e7fd4;
+    color: whitesmoke;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    font-size: 8vmin;
+}
+
+main{
+    grid-area: main;
+    padding-top: var(--main-padding);
+    background-image: url(https://i.ibb.co/6BdsRS3/7609cb18895245509b6593fad82779a4.png);
+  background-repeat: no-repeat; 
+  text-align: left;
+  background-size: cover;
+  padding-bottom: 41px;
+}
+
+.content1{
+    grid-area: content1;
+    /* padding-top: var(--main-padding);
+    padding-top: 40px; */
+}
+
+.content2{
+    grid-area: content2;
+    /* padding-top: var(--main-padding);
+    padding-top: 40px; */
+}
+
+.content3{
+    grid-area: content3;
+    /* padding-top: var(--main-padding);
+    padding-top: 40px; */
+}
+
+.content33{
+    grid-area: content33;
+    /* padding-top: var(--main-padding);
+    padding-top: 40px; */
+}
+
+.content4{
+    grid-area: content4;
+    padding-top: var(--main-padding);
+    margin: 60px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0241/6856/2743/files/Our_Dinnerware_2x_784161ab-0e57-4e00-9a5a-c393ac5691f1.jpg?v=1639561449);
+  background-repeat: no-repeat; 
+  text-align: left;
+  background-size: cover;
+}
+
+.content5{
+    grid-area: content5;
+    padding-top: var(--main-padding);
+    padding: 40px;
+    padding-top: 166px;
+  text-align: left;
+}
+
+.nav3{
+    grid-area: nav3;
+    padding-top: var(--main-padding);
+}
+
+.content6{
+    grid-area: content6;
+    padding-top: var(--main-padding);
+    margin: 20px;
+    background-image: url(https://i.ibb.co/4sqKr03/5c2436737e954847b0ffe7e80cd2867c.jpg);
+  background-repeat: no-repeat; 
+  text-align: center;
+  background-size: cover;
+  color: whitesmoke;
+margin-left: 40px;
+}
+
+.content7{
+    grid-area: content7;
+    padding-top: var(--main-padding);
+    margin: 20px;
+    background-image: url(https://i.ibb.co/zh2MtsR/f59837c0157d487a950d3ba5ac17db45.jpg);
+  background-repeat: no-repeat; 
+  text-align: center;
+  background-size: cover;
+  color: whitesmoke;
+  margin-right: 40px;
+}
+
+.content8{
+    grid-area: content8;
+    padding-top: var(--main-padding);
+    margin: 20px;
+    margin-left: 40px;
+    margin-top: 285px;
+}
+
+.content9{
+    grid-area: content9;
+    padding-top: var(--main-padding);
+    margin: 20px;
+    background-image: url(https://i.ibb.co/hKvyk82/e35d477aba4f494ea7a78bd3fe1010ca.webp);
+  background-repeat: no-repeat; 
+  text-align: left;
+  background-size: cover;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+footer{
+    grid-area: footer;
+    padding-top: var(--main-padding);
+    background-color:#828b81;
+    font-size: 3vh;
+    color: whitesmoke;
+}
+
+/* .cont1{
+    grid-area: cont1;
+    padding-top: var(--main-padding);
+    background-color:#828b81;
+}
+
+.cont2{
+    grid-area: cont2;
+    padding-top: var(--main-padding);
+    background-color:#828b81;
+}
+.cont3{
+    grid-area: cont3;
+    padding-top: var(--main-padding);
+    background-color:#828b81;
+}
+.cont4{
+    grid-area: cont4;
+    padding-top: var(--main-padding);
+    background-color:#828b81; */
+
+/* 
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+} */
+
+@media only screen and (max-width: 700px) {
+  .container {
+        grid-template-columns: 1fr;
+    /* grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr; */
+
+        grid-template-rows: 0.1fr
+         0.1fr
+         1fr 
+
+         0.9fr 0.9fr 0.9fr 0.9fr 
+
+         0.8fr 
+         0.5fr 
+
+         0.5fr 
+
+         1.5fr
+         1.5fr
+
+         0.4fr
+         1fr
+
+         1.0fr
+         ;
+         /* 1fr 1fr 1fr; */
+        grid-template-areas: "nav1"
+        "nav2"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "content33"
+
+        "content4"
+        "content5"
+
+        "nav3"
+
+        "content6"
+        "content7"
+
+        "content8"
+        "content9"
+        "footer";}
+/* 
+        "cont1"
+        "cont2"
+        "cont3"
+        "cont4" */
+        
+    
+
+    .nav2 span{
+        padding-top: 27px;
+    }
+    .nav2 .show{
+        padding-top: 8px;
+    }
+
+/* 
+    .content1{
+        margin-top: 15px;
+        font-size: 2.5vh;
+    padding: 13px 68px;
+        
+    }
+    .content1 .shop{
+        font-size: 2.5vh;
+    padding: 13px 68px;
+    }
+
+    .content2 .shop{
+        font-size: 2.5vh;
+    padding: 13px 68px;
+    }
+    
+    .cont1{
+        width: 50%;
+
+    }  
+    .cont2{
+        width: 50%;
+
+    } 
+    .content2{
+        margin-top: 15px;
+        font-size: 2.5vh;
+    padding: 13px 68px;
+    }   */
+
+
+
+    .content3 img{
+        width: 90vmin;
+
+    }
+    .content4{
+        margin: 5px;
+
+    }
+    .content5{
+        padding: 70px 40px;
+    }
+    .nav3{
+        padding: 36px 10px;
+    }
+    .content6 {
+        margin: 20px;
+    }
+    .content7 {
+        margin: 20px;
+    }
+
+    .content8{
+        position: relative;
+    bottom: 93px;
+    }
+
+    /* .hover{
+        font-size: 6vh;
+    } */
+
+
+
+}
+
+
+.menu {
+  width: 35px;
+  height: 2px;
+  background-color:whitesmoke;
+  margin: 6px 0;
+  margin-left: 25px;
+  max-width: 35px;
+
+}
+
+.show:hover ul.list-categories{
+  max-height: inherit;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.list-categories{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 300ms ease;
+}
+
+.hover:hover{
+    opacity: 50%;
+    background-color: rgba(245, 245, 245, 0.632);
+    color: rgba(245, 245, 245, 0.73);
+  transition: 0.5s;
+ display:block;
+}
+
+.hover :hover a{
+    opacity: 50%;
+    background-color: rgba(245, 245, 245, 0.632);
+    color: rgba(245, 245, 245, 0.73);
+  transition: 0.5s;
+ display:block;
+}
+/* .hoversec:hover{
+    background-color: #b0755a;
+    color:whitesmoke;
+  transition: 0.5s;
+
+} */
+
+.logo:hover{
+    opacity: 50%;
+    color:#474747;
+  transition: 0.5s;
+
+}
+
+
+.content10 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 90px;
+  text-align: left;
+}
+
+.list-container {
+  display: inline-flex;
+  /* THIS WAS FLEX */
+  width: 100%;
+}
+
+.list-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+}
+
+.list-container li {
+  padding: 5px;
+  /* background-color: #f2f2f2; */
+  margin-bottom: 5px;
+}
+
+/* .cont1{
+    width: 290px;  max-width: 600px;
+} */
+
+
+</style> <!--ADD </html> AT THE END-->
+</head>
+
+<body>
+    <!-- <center class="wrapper" >
+        <div class="main" style="width: 100%; max-width: 800px;height: 100vh;">
+            <div style="display: grid; height: 100vh;">
+                <nav>ddd</nav>
+            </div>
+        </div>
+    </center> -->
+
+
+    <div class="container">  <!-- for the responsive font % was best , after that comes vh then vmin
+    when the pic is taking most of the div + writing above it ,adding as a backgroung is the best choice
+    background size = cover is the best for grid
+    -webkit-fill-available AND fit content are good for filling the witdth while keeping it responsive
+
+    i fixed the best sellers issuie by styling the pics to width: 79%;     padding-top: 9.3vh;min-width: 290px;-->
+
+        <!-- FREE SHIP SEC -->
+        <nav class="nav1">Free shipping on orders above SAR 229,00</nav>
+
+        
+        <!-- LOGO SEC -->
+        <nav class="nav2"> <a href="#"> 
+                                            
+            <!-- :menu: -->
+            <div class="show" style="position: absolute;    padding-top: px; margin-top: -43px;">
+
+             <div class="menu"></div>
+             <div class="menu"></div>
+             <div class="menu"></div>
+
+                <ul class="list-categories">
+                 <li style="     padding: 10px 0 0 10px;">
+                    <a class="social" href="#" style="text-decoration: none; color: #474747;background-color:#d5c5ade8;font-size: 20px;">
+
+                    <p  class="logo" style="background-color:#d5c5ade8;padding: 15px;text-align: left; width: 150px;">Shop</p>
+
+                    <p  class="logo" style="background-color:#d5c5ade8;padding: 15px;text-align: left; width: 150px;">About</p>
+
+                    <p  class="logo" style="background-color:#d5c5ade8;padding: 15px;text-align: left; width: 150px;">Account</p>
+                    <p  class="logo" style="background-color:#d5c5ade8;padding: 15px;text-align: left; width: 150px;">SAR</p>
+                    <p  class="logo" style="background-color:#d5c5ade8;padding: 15px;text-align: left; width: 150px;">Cart</p>
+
+                    <p  class="logo" style="background-color:#d5c5ade8;padding: 15px;text-align: left; width: 150px;">Reviews</p></a></li>
+
+                </ul>
+            </div>
+
+            <!-- :logo: -->
+           <div style="display: inline-flex;"><p style="display: inline-flex; font-size: 8vmin;"> FAR & AWAY</p>  
+        
+        </div>
+
+            <!-- :sar: -->
+        <span style="text-decoration: none; text-align: right;display: block ; margin-top:-60px  ; font-size: 5vmin;   padding-right: 10px;"> 
+            <!-- <a class="hover" href="#" style="text-decoration: none; color: whitesmoke; padding-right: 10px;">SAR</a>
+            <a class="hover"  href="#" style="text-decoration: none; color: whitesmoke; padding-right: 10px;">Account</a> -->
+            <a  class="logo" href="#" style="text-decoration: none; color: whitesmoke; padding-right: 10px;">SAR</a>
+        </span>
+        </nav>
+
+
+        <!-- SHOP NOW SEC -->
+        <main>
+            <div style="    padding: 107px 10px 120px 10px;">
+            <p style="color: whitesmoke; padding: 20px; font-size: 7vmin;padding-bottom: 0;">Premium Tableware</p>
+
+            <p style="color: whitesmoke; padding: 20px; font-size: 6vmin; font-style: italic;padding-top: 0;">Artisan Crafted</p>
+
+            <!-- :button: -->
+            <div class="hover" style="    padding: 16px 0;margin: 20px; width: fit-content;background-color:whitesmoke ">
+                <a href="#"  style="font-family: 'Wix Madefor Display', sans-serif; font-weight: 100; font-size: 2vmin;padding: 16px 20px; width: fit-content;text-decoration: none;color:#272529;">SHOP NOW</a> 
+            </div>
+
+           </div>
+        </main>
+
+
+        <!-- BEST SELLERS SEC -->
+        <!-- <div> <p>Our best sellers</p></div> -->
+        <div class="content1">
+            <p style="font-size: 4vh;text-align: left;padding:2vh 0 2vh 5.3vh; font-style: italic;">our <span style="font-weight: bold;"> Best Sellers</span></p>
+
+            <a href="#"><img class="cont1" src="https://cdn.shopify.com/s/files/1/0241/6856/2743/products/37_1512x.jpg?v=1669388249" alt="" style="  width: 79%; min-width: 290px;"></a>
+           
+            <!-- :button: -->
+            <div class="hover" style="  padding: 0px 60px;width: fit-content; background-color: #b0755a; display: inline-flex;    margin-top: -61px;"> <!--  position: relative;  bottom: 44px; -->
+                <a class="shop" href="#"  style="font-family: 'Wix Madefor Display', sans-serif; font-weight: 100; font-size: 1.7vh;padding: 16px 20px; width: fit-content;text-decoration: none;color: rgb(245, 245, 245);">SHOP NOW</a> 
+            </div>
+            <!--  -->
+
+            <p style="font-size: 2.3vh; font-family: 'Wix Madefor Display', sans-serif;padding: 10px 0;color:#272529ab;font-weight: bold;">Dinnerware Set (16 Piece Set) <br> <span style="font-size: 1.8vh; color: #474747;"><del>299 SAR</del>  to 199 SAR</span></p>
+        </div>
+
+
+        
+        <div class="content2">  
+            <a href="#"><img class="cont2" src="https://cdn.shopify.com/s/files/1/0241/6856/2743/products/36pieceset_1_1512x.png?v=1669389933" alt="" style="width: 79%;     padding-top: 9.3vh;min-width: 290px;"></a>
+                       
+            <!-- :button: -->
+            <div class="hover" style="  padding: 0px 60px;width: fit-content; background-color: #b0755a; display: inline-flex;    margin-top: -61px;"> <!--  position: relative;  bottom: 44px; -->
+                <a  class="shop" href="#"  style="font-family: 'Wix Madefor Display', sans-serif; font-weight: 100; font-size: 1.7vh;padding: 16px 20px; width: fit-content;text-decoration: none;color: rgb(245, 245, 245);">SHOP NOW</a> 
+            </div>
+            <!--  -->
+            
+            <p style="font-size: 2.3vh; font-family: 'Wix Madefor Display', sans-serif;padding: 10px 0;color:#272529ab;font-weight: bold;">Tableware Set (36 Piece Set) <br> <span style="font-size: 1.8vh; color: #474747;"><del>469 SAR</del>  to 355 SAR</span></p>
+        
+        </div>
+
+
+        <div class="content3"> <a href="#"><img src="https://cdn.shopify.com/s/files/1/0241/6856/2743/products/21_10_Far_and_Away00048-2-Edit_1512x.png?v=1637269352" alt="" style="width: 79%;     padding-top: 9.3vh;min-width: 290px;"></a>
+                    
+            <!-- :button: -->
+            <div class="hover" style="  padding: 0px 60px;width: fit-content; background-color: #b0755a; display: inline-flex;    margin-top: -61px;"> <!--  position: relative;  bottom: 44px; -->
+                <a class="shop" href="#"  style="font-family: 'Wix Madefor Display', sans-serif; font-weight: 100; font-size: 1.7vh;padding: 16px 20px; width: fit-content;text-decoration: none;color: rgb(245, 245, 245);">SHOP NOW</a> 
+            </div>
+            <!--  -->
+            
+            <p style="font-size: 2.3vh; font-family: 'Wix Madefor Display', sans-serif;padding: 10px 0;color:#272529ab;font-weight: bold;">Cutlery Set (20 Piece Set) <br> <span style="font-size: 1.8vh; color: #474747;"><del>250 SAR</del>  to 199 SAR</span></p>
+        
+        </div>
+
+
+        <div class="content33"> <a href="#"><img src="https://cdn.shopify.com/s/files/1/0241/6856/2743/products/IVORY_Variation1_Revised_1_1512x.jpg?v=1660848821" alt="" style="width: 79%;     padding-top: 9.3vh;min-width: 290px;"></a>
+                     
+            <!-- :button: -->
+            <div class="hover" style="  padding: 0px 60px;width: fit-content; background-color: #b0755a; display: inline-flex;    margin-top: -61px;"> <!--  position: relative;  bottom: 44px; -->
+                <a class="shop"href="#"  style="font-family: 'Wix Madefor Display', sans-serif; font-weight: 100; font-size: 1.7vh;padding: 16px 20px; width: fit-content;text-decoration: none;color: rgb(245, 245, 245);">SHOP NOW</a> 
+            </div>
+            <!--  -->
+            
+            <p style="font-size: 2.3vh; font-family: 'Wix Madefor Display', sans-serif;padding: 10px 0;color:#272529ab;font-weight: bold;"> Dinnerware Set (12 Piece Set) <br> <span style="font-size: 1.8vh; color: #474747;"><del>230 SAR</del>  to 199 SAR</span></p>
+        
+        </div>
+
+
+
+        <!-- OUR STORY SEC -->
+        <!-- :bac sec: -->
+        <div class="content4"></div>
+        <!--     width: 90vmin;
+ -->
+
+        <!-- :our story: -->
+        <div class="content5"><p style="font-size: 75%;">Crafted <br>
+           <span style="font-style: italic;font-size: 100%">by</span>  tradition</p>
+        <p class="cont5p" style="font-size: 48% ;padding: 30px 0;">Our pieces are expertly made by skilled producers in countries where traditional techniques have been refined over the centuries. We respect the history and culture behind the process in creating the quality to last a lifetime.
+        <br>   
+        
+        <span style="font-family: 'Wix Madefor Display', sans-serif;position: relative;top: 33px;text-decoration: none; text-align: right; margin-top:-60px  ;    font-size: 62%;        padding-right: 10px;"> 
+            <a  class="logo" href="#" style="text-decoration: none; color:black; padding-right: 10px;">OUR STORY &#8594</a>
+        </span>
+        </p>
+        </div>
+
+        <!-- THE GAP SEC -->
+        <nav class="nav3">
+            <h3 style="font-weight: 100;font-size: 7.0vmin;">Bridging the gap between <span style="font-weight: bold;"> makers</span>  and <br>
+                <span style="font-weight: bold;"> users</span>  by sharing the <span style="font-weight: bold;"> stories</span>   and <br>
+                traditions <span style="font-weight: bold;"> behind the products we use.</span> </h3>
+        </nav>
+
+        <!-- PORTUGUESE SEC -->
+        <div class="content6">
+
+            <p style="font-size: 63%;position: relative;top: 473px;">Portuguese Ceramics
+             <br> 
+
+             <span style="font-family: 'Wix Madefor Display', sans-serif;position: relative;top: 33px;text-decoration: none; text-align: right; margin-top:-60px  ;  font-size: 45%;    padding-right: 10px;"> 
+                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">SHOP NOW &#8594</a>
+            </span>
+            </p>
+ 
+        </div>
+
+        <div class="content7">
+            
+            <p style="font-size: 63%;position: relative;top: 473px;">Portuguese Cutlery
+                <br> 
+   
+                <span style="font-family: 'Wix Madefor Display', sans-serif;position: relative;top: 33px;text-decoration: none; text-align: right; margin-top:-60px  ; font-size: 45%;    padding-right: 10px;"> 
+                   <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">SHOP NOW &#8594</a>
+               </span>
+               </p>
+    
+        </div>
+
+        <!-- SUSTAINABILITY SEC -->
+        <div class="content8">
+            <p style="font-size: 6vmin;text-align: left;font-style: italic;">Sustainability <br>
+
+             <p style="text-align: left;font-size: 48% ;padding: 30px 0;">Our raw materials are always locally sourced and production methods refined to limit environmental harm. We use 100% recyclable packaging and plant one or more trees for each item sold.
+             <br>   
+             
+             <span style="font-family: 'Wix Madefor Display', sans-serif;position: relative;top: 33px;text-decoration: none; text-align: right; margin-top:-60px  ; font-size: 59% ;   padding-right: 10px;font-weight: bold;"> 
+                 <a  class="logo" href="#" style="text-decoration: none; color:black; padding-right: 10px;">OUR SUSTAINABILITY PROMISE &#8594</a>
+             </span>
+             </p>
+        </div>
+
+        <div class="content9"></div>
+
+        <!-- FOOTER SEC  from chatgpt-->
+        <footer class="footer">
+            <div class="content10">
+                
+                <div class="list-container">
+                  <ul>
+                    <li><div>
+                        We bring quality artisanal goods from around the world right to your doorstep. Always ethically sourced and sustainably crafted.
+                    </div></li>
+
+                  </ul>
+
+                  <ul style="list-style-type: none; ; font-family: 'Wix Madefor Display', sans-serif;text-decoration: none; font-size: 2vh;padding-left: 40px;">
+                    <li style="font-size: 3vh; font-family: ;">Shop</li>
+                   
+                    <li style="padding-bottom: 15px; ">
+                        <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Ceramics</a>
+                        </li>
+                                               
+                        <li style="padding-bottom: 15px; ">
+                            <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Cutlery</a>
+                            </li>
+                                               
+                        <li style="padding-bottom: 15px; ">
+                            <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Placemats</a>
+                            </li>
+                                               
+                        <li style="padding-bottom: 15px; ">
+                            <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Bedding</a>
+                            </li>                  
+                    </ul>
+       
+
+                    
+                    <ul style="list-style-type: none; ; font-family: 'Wix Madefor Display', sans-serif;text-decoration: none; font-size: 2vh;padding-left: 15px;">
+                        <li style="font-size: 3vh; font-family: ;">About</li>
+                        <li style="padding-bottom: 15px; ">
+                            <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Our Story</a>
+                            </li>
+                                                   
+                            <li style="padding-bottom: 15px; ">
+                                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">From the Artisan</a>
+                                </li>
+                                                   
+                            <li style="padding-bottom: 15px; ">
+                                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Sustainability</a>
+                                </li>
+                                                   
+                            <li style="padding-bottom: 15px; ">
+                                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Contact Us</a>
+                                </li>
+                                                                       
+                            <li style="padding-bottom: 15px; ">
+                                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Reviews</a>
+                                </li> 
+                  </ul>
+
+
+                    <ul style="list-style-type: none; ; font-family: 'Wix Madefor Display', sans-serif;text-decoration: none; font-size: 2vh;padding-left: 15px;">
+                        <li style="font-size: 3vh; font-family: ;">Help</li>
+               
+                        <li style="padding-bottom: 15px; ">
+                            <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">FAQ</a>
+                            </li>
+                                                   
+                            <li style="padding-bottom: 15px; ">
+                                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Impressum</a>
+                                </li>
+                                                   
+                            <li style="padding-bottom: 15px; ">
+                                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Terms</a>
+                                </li>
+                                                   
+                            <li style="padding-bottom: 15px; ">
+                                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Join Us</a>
+                                </li>
+                  </ul>
+
+
+                  <ul style="list-style-type: none; ;text-decoration: none; font-size: 2vh;">
+                    <li style="font-size: 3vh; font-family: ;">Newsletter</li>
+                    <li style="padding-bottom: 15px; ">
+                        <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;font-size: 3vh;">Join to get special offers, free giveaways, and once-in-a-lifetime deals.</a>
+                        </li>
+                  </ul>
+                </div>
+              </div>
+        </footer>
+        <!-- <footer style="display: inline-flex; color: whitesmoke; text-align: left;padding: 120px 90px;"></footer> -->
+            <!-- <div class="cont1">ee</div>
+            <div class="cont2">ee</div>
+            <div class="cont3">ee</div>
+            <div class="cont4">ee</div> -->
+
+
+
+
+    <!-- <div style="display: inline-flex;"> -->
+
+        <!-- :pargraph: -->
+            <!-- <div style="width: 300px; font-size: 3vh;padding-right: 90px;">
+                We bring quality artisanal goods from around the world right to your doorstep. Always ethically sourced and sustainably crafted.
+            </div>           -->
+
+        <!-- :first list: -->
+            <!-- <div style="width: 100px; font-size: 3vh;padding-right: 90px;display: block;">
+                <p style="font-size: 2.5vh;    padding-bottom: 25px;">shop</p>
+
+                <ul style="list-style-type: none; font-size: 1.5vh; padding-bottom: 25px; font-family: 'Wix Madefor Display', sans-serif;text-decoration: none; font-size: 1.5vh;   padding-right: 10px;">
+                   
+                    <li style="padding-bottom: 15px; ">
+                    <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Ceramics</a>
+                    </li>
+                                           
+                    <li style="padding-bottom: 15px; ">
+                        <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Cutlery</a>
+                        </li>
+                                           
+                    <li style="padding-bottom: 15px; ">
+                        <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Placemats</a>
+                        </li>
+                                           
+                    <li style="padding-bottom: 15px; ">
+                        <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Bedding</a>
+                        </li>
+                                        
+                </ul>
+                
+            </div> -->
+
+        <!-- :sec list: -->
+            <!-- <div style="width: 100px; font-size: 3vh;padding-right: 90px;display: block;">
+                <p style="font-size: 2.5vh;    padding-bottom: 25px;">About</p>
+
+                <ul style="list-style-type: none; font-size: 1.5vh; padding-bottom: 25px; font-family: 'Wix Madefor Display', sans-serif;text-decoration: none; font-size: 1.5vh;   padding-right: 10px;">
+                   
+                    <li style="padding-bottom: 15px; ">
+                    <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Our Story</a>
+                    </li>
+                                           
+                    <li style="padding-bottom: 15px; ">
+                        <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">From the Artisan</a>
+                        </li>
+                                           
+                    <li style="padding-bottom: 15px; ">
+                        <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Sustainability</a>
+                        </li>
+                                           
+                    <li style="padding-bottom: 15px; ">
+                        <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Contact Us</a>
+                        </li>
+                                                               
+                    <li style="padding-bottom: 15px; ">
+                        <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Reviews</a>
+                        </li>                    
+                </ul>
+                
+            </div> -->
+
+        <!-- :third list: -->
+        <!-- <div style="width: 100px; font-size: 3vh;padding-right: 90px;display: block;">
+            <p style="font-size: 2.5vh;    padding-bottom: 25px;">Help</p>
+
+            <ul style="list-style-type: none; font-size: 1.5vh; padding-bottom: 25px; font-family: 'Wix Madefor Display', sans-serif;text-decoration: none; font-size: 1.5vh;   padding-right: 10px;">
+               
+                <li style="padding-bottom: 15px; ">
+                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">FAQ</a>
+                </li>
+                                       
+                <li style="padding-bottom: 15px; ">
+                    <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Impressum</a>
+                    </li>
+                                       
+                <li style="padding-bottom: 15px; ">
+                    <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Terms</a>
+                    </li>
+                                       
+                <li style="padding-bottom: 15px; ">
+                    <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;">Join Us</a>
+                    </li>
+                                    
+            </ul>
+            
+        </div>
+
+
+         -->
+        <!-- :4th list: -->
+        <!-- <div style="width: 300px; font-size: 3vh;padding-right: 90px;display: block;">
+            <p style="font-size: 2.5vh;    padding-bottom: 25px;">Newsletter</p>
+
+            <ul style="list-style-type: none; font-size: 3vh; padding-bottom: 25px; text-decoration: none; font-size: 1.5vh;   padding-right: 10px;">
+               
+                <li style="padding-bottom: 15px; ">
+                <a  class="logo" href="#" style="text-decoration: none;color: whitesmoke; padding-right: 10px;font-size: 3vh;">Join to get special offers, free giveaways, and once-in-a-lifetime deals.</a>
+                </li>
+                                       
+                                    
+            </ul>
+            
+        </div>
+
+    </div> -->
+
+        
+    </div>
+</body> 
+</html>       
