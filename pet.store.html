@@ -1,0 +1,706 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+<html xmlns= "http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html ; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width , intial-scale=1.0" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pets store</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+* {
+
+margin: 0;
+padding: 0;
+border: 0;
+border-spacing: 0;
+font-family: 'Caveat Brush', cursive;}
+
+body {
+    margin: 0;
+    background-color: rgba(54, 17, 17, 0.452);
+}
+table{
+    border-spacing: 0;
+}
+td{
+    padding: 0;
+}
+img{
+    border: 0;
+}
+
+.wrapper{
+    width: 100%;
+    table-layout: fixed; 
+    padding-bottom: 60px; /*لين هنا الاساس ما يتغير شي-*/
+    background-color: #f3f0f0e8 ;
+}
+
+.main{
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(245, 241, 220, 0.685);
+    font-family: 'Caveat Brush', cursive;
+    font-size: 45px;
+    /* color: #b793d2; */
+    color: #272529f5;
+    /* font-style: italic; */
+    text-align: left;
+    
+}
+
+.logo > li  {
+    display: inline; 
+    list-style: none; 
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 9px;
+
+}
+
+.logo > li > a {
+  text-decoration: none;
+  color: #0d0c22;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: inline-block;  /* غيرتو من بلوك ل انلاين بلوك */
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.3s;
+  fill: #666;
+}
+
+.container svg:hover {
+  transform: scale(1.1);
+}
+
+.container input:checked ~ svg {
+  fill: #E3474F;
+}
+
+.group {
+ display: flex;
+ line-height: 28px;
+ align-items: center;
+ position: relative;
+ max-width: 190px;
+}
+
+.input {
+ width: 100%;
+ height: 30px;
+ line-height: 28px;
+ padding: 0 1rem;
+ padding-left: 2.5rem;
+ border: 2px solid transparent;
+ border-radius: 8px;
+ outline: none;
+ background-color: #f3f3f4;
+ color: #0d0c22;
+ transition: .3s ease;
+}
+
+.input::placeholder {
+ color: #9e9ea7;
+}
+
+.input:focus, input:hover {
+ outline: none;
+ border-color: rgba(234,76,137,0.4);
+ background-color: #fff;
+ box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+ position: absolute;
+ left: 1rem;
+ fill: #9e9ea7;
+ width: 1rem;
+ height: 1rem;
+}
+
+
+.back{
+  background-image: url(https://i.ibb.co/9qPjgm4/unnamed.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%; height: 300px;
+
+  
+
+}
+
+.button{
+    background-color: #ffffff;
+    color: #171a1bd5;
+    text-decoration: none;
+    padding: 5px 20px ;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-size: 2vw;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.button-sec{
+    background-color: #ffffffee;
+    color: #171a1bd5;
+    text-decoration: none;
+    padding: 5px 20px ;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.back-sec{
+  background-image: url(https://i.ibb.co/9bT36Zy/75a12976eb7a46ca865f6671ee2d66df.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%; height: ;
+
+  
+
+}
+
+
+.three-clm {
+    text-align: center;
+    padding: 10px 0 35px;
+}
+
+.three-clm .clm {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px
+  @media screen and (min-width: 601px) {
+  .test {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* @media screen and (max-width: 600px) {
+  .test {
+    font-size: 30px;
+  }
+} */ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style> <!--ADD </html> AT THE END-->
+</head>
+
+<body>
+    <center class="wrapper" >
+        <table class="main" style="width: 100%; max-width: 800px;">
+
+          <tr style="width: 100%; max-width: 800px;">
+            <td style="padding-left: 30px; padding-right: 5px;">
+                Purr-fect  Pets
+            </td>
+
+            <td>
+                <ul class=logo style="display: inline; list-style: none; margin: 0 auto; text-decoration: none;" >
+                    <li><a href="#" target="_blank" >contact us</a></li>
+                    <li><a href="#" target="_blank">products</a></li>
+                    <li><a href="#" target="_blank">subscriptions</a></li>
+                </ul>
+            </td>
+
+            <td style="padding-right: 10px;">
+               <label class="container"> <a href="#" target="_blank">
+                    <input type="checkbox">
+                    <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path></svg>
+                  </a></label>
+            </td>
+
+            <td>
+              <a href="#" target="_blank"><img src="https://i.ibb.co/QYyYKqc/imgbin-computer-icons-user-profile-user-account-avatar-Tf-T3-Fk-AEbg-D76-My1-Gynm-W5-Kz-T-removebg-p.png" alt="" style="height: 20px; opacity: 75%; "></a> 
+              
+            </td>
+            
+            <td>
+              <a href="#" target="_blank"><img src="https://i.ibb.co/kD4F1rj/52-523676-shopping-bag-icon-png-transparent-png-removebg-preview.png" alt="" style="height: 20px; opacity: 60% ;padding: 5px; "></a> 
+              
+            </td>
+ 
+
+            <td>
+                <div class="group" style="padding: 10px;">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                    <input placeholder="Search" type="search" class="input">
+                  </div>
+
+                
+            </td>
+          </tr>
+
+
+          <table class="back" style="width: 800px; max-width: 100%;">
+          <tr>
+            <td class="test" style="width: 800px; max-width: 100%;"> 
+              
+              <!-- <p style="background-image: url(https://i.ibb.co/9qPjgm4/unnamed.jpg);"></p> -->
+              <!-- <a href="#" target="_blank">
+                <img src="https://i.ibb.co/9qPjgm4/unnamed.jpg" alt="unnamed"
+                style="width: 800px; max-width: 100%;">
+              </a></td>  -->
+                <p class="test" style=" font-size: 4vw;text-align: left; color: rgba(255, 255, 255, 0.918); 
+              /* padding-bottom: 140px; */
+               padding-left: 90px; padding-top: 40px;">
+                FREE <br> shipping for <br> new customers !
+
+                <br><a href="#" target="_blank" class="button">click here</a> </p> <br> 
+
+          </tr></table>
+
+
+          
+          <table  style=" width: 800px; max-width: 100%; text-align: center; background-color: rgba(245, 241, 220, 0.685); padding: 50px; padding-top: 50px; padding-bottom: 15px;"> <tr  style="width: 800px; max-width: 800px">
+            <td rowspan="0"><img src="https://i.ibb.co/yXdZRTz/unnamed.jpg" alt="" style="padding: 5px; max-width: 195px; width: 185px;height: 335px; border-radius: 10px; max-width: 361px; padding-left: 5px; position: relative; top: -13px;">
+            
+              <div style="position:relative; bottom: 335px; right: 35px;">
+             <a href="#" target="_blank" class="button-sec">DOGS</a> 
+            </div>
+            
+            </td>
+            <td><img src="https://i.ibb.co/N9cJH58/unnamed.jpg" alt="" style="padding: 5px; width : 233px  ; border-radius: 10px;max-width: 361px; height: 169px;">
+              
+              <div style="position:relative; bottom: 160px; right: 12px; font-size: 20px;">
+              <a href="#" target="_blank" class="button-sec">SMALL ANIMALS</a> 
+               </div>   
+
+            </td>
+
+            <td ><img src="https://i.ibb.co/L0DjZKM/unnamed.jpg" alt="" style="padding: 5px; max-width: 260px; width: 233px; border-radius: 10px;max-width: 361px; height: 169px;">
+              <div style="position:relative; bottom: 160px; right: 61px;">
+              <a href="#" target="_blank" class="button-sec">BIRDS</a> 
+               </div>   
+
+            </td>
+          </tr>
+
+          <tr>
+            <!-- <td>1</td> -->
+            <td colspan="2"><img src="https://i.ibb.co/PGSrpdx/unnamed.jpg" alt="" style="padding: 5px; max-width: 100% ; width: 485px; border-radius: 10px;max-width: 554px; position: relative; top: -28px; height: 155px;">
+              
+              <div style="position:relative; bottom: 175px; right: 191px;">
+              <a href="#" target="_blank" class="button-sec">CATS</a> 
+               </div> 
+                           
+            </td>
+          </tr>
+         </table>
+
+
+
+         
+
+         <tr>
+          <td class="three" style="display: inline-block; ">
+              <tr >
+                <td >
+                  <p style="background-color: rgba(245, 241, 220, 0.685); font-size: 35px; width: 800px; max-width: 100%;">Popular Food <span style="color: #f1cc7e;">Brands</span> </p>
+                    <p style="background-color: rgba(245, 241, 220, 0.685); width: 800px; max-width: 100%; padding-bottom: 20px;">
+                       Trusted by all pet parents</p>
+                </td>
+              </tr>
+
+
+        
+            <table with="100%" style="display: inline-flex; text-align: left; background-color: rgba(245, 241, 220, 0.685); padding: 12px;  max-width: 800px; margin-right: -5px; padding-bottom: 55px;"> <!-- شيكي هنا -->
+              <tr>
+                <td class="three">
+                  <table class="column">
+
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+
+                          <tr>
+                            <td >
+                              <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/PersianKitten-1.png?v=1674806034&width=823" alt=""
+                              style="width : 177px">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="contact" style="text-align: left;">
+                  <p style="width: 161px; background-color: #f4f6fa; padding: 8px; font-family:Arial, Helvetica, sans-serif;">$49.49
+                  
+
+                    <span style="position: relative; left: 60px;">
+                      
+                      <label class="container" > <a href="#" target="_blank">
+                        <input type="checkbox">
+                        <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path></svg>
+                      </a></label>
+
+                    <a href="#" target="_blank"><img src="https://i.ibb.co/kD4F1rj/52-523676-shopping-bag-icon-png-transparent-png-removebg-preview.png alt="" style="height: 20px; opacity: 60% ; padding-left: 5px; "></a>
+                    
+                    </span>
+                  </p>
+                </td>
+              </tr>
+
+            </table>
+
+
+
+
+            <table with="100%" style="display: inline-flex; text-align: left; background-color: rgba(245, 241, 220, 0.685); padding: 12px;  max-width: 800px;margin-right: -5px;padding-bottom: 55px;"> <!-- شيكي هنا -->
+              <tr>
+                <td class="three">
+                  <table class="column">
+
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+
+                          <tr>
+                            <td>
+                              <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/PedigreeChickenChunksinGravyWetPuppyFood-70gpacks.jpg?v=1677057543&width=823" alt=""
+                              style="width : 177px">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="contact" style="text-align: left;">
+                  <p style="width: 161px; background-color: #f4f6fa; padding: 8px; font-family:Arial, Helvetica, sans-serif;">$49.49
+                  
+
+                    <span style="position: relative; left: 60px;">
+                      
+                      <label class="container" > <a href="#" target="_blank">
+                        <input type="checkbox">
+                        <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path></svg>
+                      </a></label>
+
+                    <a href="#" target="_blank"><img src="https://i.ibb.co/kD4F1rj/52-523676-shopping-bag-icon-png-transparent-png-removebg-preview.png" alt="" style="height: 20px; opacity: 60% ; padding-left: 5px; "></a>
+                    
+                    </span>
+                  </p>
+                </td>
+              </tr>
+
+            </table>
+
+
+
+
+            <table with="100%" style="display:inline-flex; text-align: left; background-color: rgba(245, 241, 220, 0.685); padding: 12px;  max-width: 800px;margin-right: -5px;padding-bottom: 55px;"> <!-- شيكي هنا -->
+              <tr>
+                <td class="three">
+                  <table class="column">
+
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+
+                          <tr>
+                            <td>
+                              <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/ZVP-0216_Economic_falista_2013kopia.jpg?v=1654583481&width=823" alt=""
+                              style="width : 177px">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="contact" style="text-align: left;">
+                  <p style="width: 161px; background-color: #f4f6fa; padding: 8px; font-family:Arial, Helvetica, sans-serif;">$49.49
+                  
+
+                    <span style="position: relative; left: 60px;">
+                      
+                      <label class="container" > <a href="#" target="_blank">
+                        <input type="checkbox">
+                        <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path></svg>
+                      </a></label>
+
+                    <a href="#" target="_blank"><img src="https://i.ibb.co/kD4F1rj/52-523676-shopping-bag-icon-png-transparent-png-removebg-preview.png" alt="" style="height: 20px; opacity: 60% ; padding-left: 5px; "></a>
+                    
+                    </span>
+                  </p>
+                </td>
+              </tr>
+
+            </table>
+
+
+
+
+            <table with="100%"  style="display: inline-flex; text-align: left; background-color: rgba(245, 241, 220, 0.685); padding: 12px; max-width: 800px;padding-bottom: 55px;"> <!-- شيكي هنا -->
+              <!-- ما ينفع نحط لهم غير 100%  عشان بكدا مارح يصيرو جمب بعض ^^^^^^^^ -->
+              <tr>
+                <td class="three">
+                  <table class="column">
+
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+
+                          <tr>
+                            <td>
+                              <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/MaxiStarter-1.png?v=1674804995&width=823" alt=""
+                              style="width : 177px">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="contact" style="text-align: left;">
+                  <p style="width: 161px; background-color: #f4f6fa; padding: 8px; font-family:Arial, Helvetica, sans-serif;">$49.49
+                  
+
+                    <span class="content" style="position: relative; left: 60px;">
+                      
+                      <label class="container" > <a href="#" target="_blank">
+                        <input type="checkbox">
+                        <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path></svg>
+                      </a></label>
+
+                    <a href="#" target="_blank"><img src="https://i.ibb.co/kD4F1rj/52-523676-shopping-bag-icon-png-transparent-png-removebg-preview.png" alt="" style="height: 20px; opacity: 60% ; padding-left: 5px; "></a>
+                    
+                    </span>
+                  </p>
+                </td>
+              </tr>
+
+            </table>
+
+
+          </td>
+         </tr>
+
+
+
+
+         <table class="back-sec" style="width: 800px; max-width: 100%;">
+          <tr>
+            <td class="test" style="width: 800px; max-width: 100%;"> 
+              
+                <p class="test" style=" font-size: 4.5vw;text-align: left; color: rgba(255, 255, 255, 0.918); 
+               padding-left: 90px; padding-top: 40px;">
+                Sun's Out ! <br> Shop Summer Essentials<br>
+
+              <span style="position: relative ; top: 10px;"><a href="#" target="_blank" class="button">Shop Now</a> </span></p> <br> 
+
+          </tr></table>         
+
+          
+        
+    
+
+
+
+
+
+
+
+
+
+           <tr>
+            <td class="three-clm">
+                <table width="100%" style="width: 100%; max-width: 800px; background-color: rgba(245, 241, 220, 0.685); ">
+
+                    <tr>
+                        <td style="width: 100%; max-width: 800px; background-color: rgba(245, 241, 220, 0.685); ">
+                                <br>
+                                  <p style="text-align: center; background-color: rgba(245, 241, 220, 0.685); font-size: 50px; width: 800px; max-width: 100%;">Why <span style="color: #f1cc7e;">Purr-fect Pets </span>? </p>
+                               <br>            
+                        </td>
+                    </tr>
+
+
+                    <tr >
+                        <td class="three-clm">
+
+                            <table class="clm" >
+
+                                <tr>
+                                    <td class="pad" style="padding: 15px 0 25px;">
+                                        <table class="content" style="font-size: 15px; line-height: 20px; padding: 0 5px; text-decoration: none;">
+
+                                            <tr>
+                                                <td> 
+                                                    <br> <!--حطيت قبل كل صوره عشان يبعدو عن بعض فالايميل br --> <img src="https://i.ibb.co/DYfjBGv/images-removebg-preview-1.png" alt=""
+                                                    style=" width: 40px; max-width: 130px; border-top-left-radius: 200px; border-top-right-radius: 200px; position: relative; left: 50px;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="content">
+                                        <p style="font-size: 15px; line-height: 20px; padding: 3px; text-decoration: none; background-color: rgba(245, 241, 220, 0.685) border-radius: 4px;" target="_blank" href="#">FREE shipping and return </p>
+                                    </td>
+                                </tr>
+
+
+                            </table>
+
+
+
+                            <table class="clm">
+                                <tr>
+                                    <td class="pad" style="padding: 15px 0 25px;">
+                                        <table class="content" style="font-size: 15px; line-height: 20px; padding: 0 5px; text-decoration: none;">
+                                            <tr>
+                                                <td>
+                                                    <br> <img src="https://i.ibb.co/Jth5DSC/images-removebg-preview-2.png" alt=""
+                                                    style="width: 40px; max-width: 130px;border-top-left-radius: 200px; border-top-right-radius: 200px; position: relative; left: 50px;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="content">
+                                      <p style=" font-size: 15px; line-height: 20px; padding: 3px; text-decoration: none; background-color: rgba(245, 241, 220, 0.685) ; border-radius: 4px; margin-right: -100px; " >BEST deals</p>
+                                    </td>
+                                </tr>
+
+
+                            </table>
+
+
+
+                            <table class="clm">
+                                <tr>
+                                    <td class="pad" style="padding: 15px 0 25px;">
+                                        <table class="content" style="font-size: 15px; line-height: 20px; padding: 0 5px; text-decoration: none;">
+                                            <tr>
+                                                <td>
+                                                    <br> <img src="https://i.ibb.co/9NTnPZ0/images-removebg-preview.png" alt=""
+                                                    style="width: 40px; max-width: 130px ;border-top-left-radius: 200px; border-top-right-radius: 200px; position: relative; left: 50px;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="content" >
+                                      <p style="font-size: 15px; line-height: 20px; padding: 3px; text-decoration: none; background-color: rgba(245, 241, 220, 0.685) border-radius: 4px;">24/7 customer's service</p>
+                                    </td>                                    
+                                </tr>
+
+
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+         </tr>
+
+
+
+
+         <table width="100%" style="width: 100%; max-width: 800px; background-color: #f7dca2; ">
+
+          <tr>
+            <td width="185px" style="padding: 26px 40px; display: inline-flex; opacity: 90%;">
+              <a href="#" target="_blank"><img src="https://i.ibb.co/tLCczBX/516106654803d8ttslqlc-removebg-preview-3.png" alt="" style="width: 30px;"></a>
+              <a href="#" target="_blank"><img src="https://i.ibb.co/MN7pG4h/516106654803d8ttslqlc-removebg-preview.png" alt="" style="width: 30px;"></a>
+              <a href="#" target="_blank"><img src="https://i.ibb.co/JF47FRg/516106654803d8ttslqlc-removebg-preview-2.png" alt="" style="width: 30px;"></a>
+            </td>
+
+
+
+            <td width="185px" style="padding: 20px 40px; line-height: 30px; opacity: 95%;">
+              <a href="#" target="_blank" style="text-decoration: none; color: #0d0c22;">
+              <p>Contact Us</p>
+              <p> Track Your Order</p>
+              <p> FAQs & Exchange Policy </p>
+               <p>Birthday Club</p> 
+              </a>             
+            </td>
+
+
+
+ 
+            <td width="185px" style="padding: 20px 40px; line-height: 30px; opacity: 95%;">
+              <a href="#" target="_blank" style="text-decoration: none; color: #0d0c22;">
+              <p>About Us</p>
+              <p>Careers</p>  
+              <p>Store Locator</p>  
+              <p>Pet Spa</p> 
+            </a> 
+
+            </td>            
+          </tr>
+
+          <tr></tr>
+
+          <tr></tr>
+
+
+         </table>
+        </table>
+    </center>
+</body>
+</html>    
