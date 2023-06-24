@@ -1,0 +1,790 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+<html xmlns= "http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html ; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width , intial-scale=1.0" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kids site</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+* {
+
+margin: 0;
+padding: 0;
+border: 0;
+border-spacing: 0;
+font-family: 'Caveat Brush', cursive;
+}
+
+body {
+    margin: 0;
+    background-color: #d5d3d3e8;
+}
+table{
+    border-spacing: 0;
+}
+td{
+    padding: 0;
+}
+img{
+    border: 0;
+}
+
+.wrapper{
+    width: 100%;
+    table-layout: fixed; 
+    padding-bottom: 60px; /*لين هنا الاساس ما يتغير شي-*/
+    background-color: #f6f1f1 ;
+}
+
+.main{
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(245, 241, 220, 0.685);
+    font-family: 'Caveat Brush', cursive;
+    font-size: 45px;
+    /* color: #b793d2; */
+    color: #272529f5;
+    /* font-style: italic; */
+    text-align: left;
+    
+}
+
+.social > li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 5px;
+    padding: 10px 4.5px;
+
+}
+
+.social :hover{
+    color: #ef5874;
+}
+
+
+.show:hover ul.list-categories{
+  max-height: inherit;
+  opacity: 1;
+}
+
+.list-categories{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 300ms ease;
+}
+
+.back{
+  background-image: url(https://news.asu.edu/sites/default/files/istock-1013268108.jpg);
+  background-repeat: no-repeat; 
+  background-size: 900px; height: 400px;
+}
+
+/* .back2{
+    width: 900px; height: 600px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.back2 :hover {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */
+  /* -webkit-transform: scale(1.2); Safari 3-8 }*/
+
+
+.links :hover{
+    color:  rgb(255, 255, 255);
+    transition: 1s;    
+}
+
+.back3{
+  background-image: url(https://i.ibb.co/xmNJVM0/Screenshot-2023-05-04-182408.png);
+  background-repeat: no-repeat; 
+  background-size: 900px; height: 135px;
+}
+
+button:hover {
+    background-color: #00bfb0;
+}
+
+button {
+  padding: 1.3em 3em;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000;
+  background-color:#ef5874;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color:#00bfb0;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.back4{
+  background-image: url(https://i.ibb.co/CKmhR0S/9bb1ea5d546e4076a058ff3b8c49de62.png);
+  background-repeat: no-repeat; 
+  background-size: 900px; height: 471px;
+  
+}
+
+.parent{
+    background-color:white;
+    width: 756px;
+    padding: 20px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 45px;
+    row-gap: 14px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-bottom: 38px;
+}
+
+.parent div{
+    background-color: ;
+    color: #00bfb0;
+    text-align: left;
+}
+
+ 
+
+.scene {
+ width: 10em;
+ justify-content: center;
+ align-items: center;
+}
+
+.cube {
+ color: #ccc;
+ cursor: pointer;
+ font-family: 'Roboto', sans-serif;
+ transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
+ transform-style: preserve-3d;
+ transform-origin: 100% 50%;
+ width: 10em;
+ height: 4em;
+}
+
+.cube:hover {
+ transform: rotateX(-90deg);
+}
+
+.side {
+ box-sizing: border-box;
+ position: absolute;
+ display: inline-block;
+ height: 18em;
+ width: 14em;
+ text-align: center;
+ text-transform: uppercase;
+ padding-top: 0em;
+ font-weight: bold;
+}
+
+.top {
+ background:rgb(241, 229, 220);
+ color: #222229;
+ transform: rotateX(36deg) translate3d(0, 0, 2em);
+ box-shadow: inset 0 0 0 5px #fff;
+ opacity: 61%;
+}
+
+.front {
+ color: #fff;
+ box-shadow: inset 0 0 0 5px #fff;
+ transform: translate3d(0, 0, 7em);
+}
+
+.footer :hover{
+    color:#ef5874;
+    transition: 1s;    
+}
+</style> <!--ADD </html> AT THE END-->
+</head>
+
+<body>
+    <center class="wrapper" >
+        <table class="main" style="width: 100%; max-width: 800px;">
+
+
+            <table style="width: 100%; max-width: 900px; background-color: #ef5874;text-align: center; color: aliceblue;">
+
+                <tr >
+                    <td style="text-align: left; padding-left: 50px;"> <img src="https://i.ibb.co/R0djgwF/gps-location-white-symbol-icon-transparent-png-11637079270ec5zfjqidf-removebg-preview.png" alt="" width="20px" style="padding: 3px; margin-bottom: -6.5px;"> Jeddah , saudi arabia 
+                    <span style="padding-left: 25px;"><img src="https://i.ibb.co/yhrGR7t/images-removebg-preview.png" alt="" width="24px" style="padding: 3px; margin-bottom: -6.5px;margin-right: -3px;"> 0571038273</span></td>
+
+                    <td>
+                        <ul class="social">
+                            <li><a href="#" target="_blank"> <img src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998be6c0719f2223a2f9b_white-instagram.png"  alt="" width="23" style="padding: 3px 0;"></a></li>
+                            <li><a href="#" target="_blank"> <img src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bf675bc65a04b74fd3_white-twitter.png"  alt="" width="23" style="padding: 3px 0;"></a></li>
+                            <li><a href="#" target="_blank"> <img src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998cde536112f85d7271e_white-youtube.png"  alt="" width="23" style="padding: 3px 0;"></a></li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+<!-- LOGO & LISTS SEC -->
+
+                <table style="width: 100%; max-width: 900px; background-color: aliceblue;text-align: center; color: black;height: 100px;">
+                    <tr>
+                        <td style="text-align: left;"><img src="https://i.ibb.co/YRcZ52h/Screenshot-2023-04-29-113559-removebg-preview.png" alt="" width="140px" style="padding: 5px 0 0 15px ;"></td>
+
+
+                        <td>
+                            <ul class="social" style="display: inline-flex; position: relative; right: -40px;">
+                               <li style="position: absolute;    margin-right: -96px;    left: 65px;"><a href="#" target="_blank" style="text-decoration: none;"><p style="padding: 5px 10px 5px 10px ; color: white; background-color: #ef5874;">Home</p> </a></li></div>
+
+
+
+
+                       <!--position: absolute خلا القوائم ثابته فالصفحه وما تطير لما نسوي هوفر-->
+                               <li style=" position: relative; left: 72px;">
+                                <a href="#" target="_blank" style="text-decoration: none;color: rgba(139, 46, 46, 0.808); margin-right: 36px;"><p style="padding: 5px 0 0 15px ;">
+                                
+                                <div class="show" style="position: absolute;left: 39px;">Timetables
+
+                                    <ul class="list-categories">
+                                     <li style=" padding-top: 10px;">
+                                        <a class="social" href="#" style="text-decoration: none; color:rgba(139, 46, 46, 0.6);background-color: antiquewhite;">
+                                        <p style="background-color: #faeac8;padding: 10px;text-align: left; width: 150px;">7:00 Am to 3:00 Pm</p></li>
+                                        <p style="background-color: #faeac8;padding: 10px;text-align: left;">3:00 Pm to 10:00 Pm</p></a></li>
+    
+                                    </ul>
+                                </div>
+
+                                </p></a></li>
+                               
+
+
+
+                              <li style="width: 60px;    padding-left: 60px;"><a href="#" target="_blank" style="text-decoration: none;color: rgba(139, 46, 46, 0.808);"><p style="padding: 5px 0 0 15px ;">
+                                
+                                <div class="show" style="position: absolute;left: 213px; ">Classrooms
+                                    <ul class="list-categories">
+                                        <li ><a class="social" href="#" style="text-decoration: none; color:rgba(139, 46, 46, 0.6);background-color: antiquewhite;"><p style="background-color: #faeac8;padding: 10px;text-align: left;">Young toddlers</p></a></li>
+                                        <li ><a class="social" href="#" style="text-decoration: none; color:rgba(139, 46, 46, 0.6);background-color: antiquewhite;"><p style="background-color: #faeac8;padding: 10px;text-align: left;">Toddlers</p></a></li>
+                                        <li ><a class="social" href="#" style="text-decoration: none; color:rgba(139, 46, 46, 0.6);background-color: antiquewhite;"><p style="background-color: #faeac8;padding: 10px;text-align: left;">Preschoolers</p></a></li>
+                                        <li ><a class="social" href="#" style="text-decoration: none; color:rgba(139, 46, 46, 0.6);background-color: antiquewhite;"><p style="background-color: #faeac8;padding: 10px;text-align: left;">Pre kindergarten</p></a></li>
+    
+                                    </ul></div>
+
+                                </p></a></li> 
+                                                              
+
+
+                                <li style="max-width: 60px; width: 60px;   padding-left: 60px;"><a href="#" target="_blank" style="text-decoration: none;color: rgba(139, 46, 46, 0.808);"><p style="padding: 5px 0 0 15px ;">
+                                
+                                    <div class="show" style="position: absolute;   left: 317px; width: 60px; ">About us
+                                        <ul class="list-categories" style="    width: 242px;">
+                                            <li ><a class="social" href="#" style="text-decoration: none; color:rgba(139, 46, 46, 0.6);background-color: antiquewhite;"><p style="background-color: #faeac8;padding: 10px;text-align: left; line-height: 23px;">Learning should be fun! <br> and that's what bambini kindergarten is all about <br> Discover our exciting activities and join us <br> for a kindergarten experience like no other!</p></a></li>
+     
+                                        </ul></div>
+    
+                                    </p></a></li> 
+                                       
+
+                                    <li style="width: 60px;   padding-left: 60px;"><a href="#" target="_blank" style="text-decoration: none;color: rgba(139, 46, 46, 0.808);"><p style="padding: 5px 0 0 15px ;">
+                                
+                                        <div class="show" style="position: absolute; left: 391px; ">Pricing</div>
+        
+                                        </p></a></li> 
+                                           
+
+                                        <li ><a href="#" target="_blank" style="text-decoration: none;color: rgba(139, 46, 46, 0.808);"><p style="padding: 5px 0 0 15px ;">
+                                
+                                            <div class="show">Events</div>
+            
+                                            </p></a></li> 
+                                               
+                                <li><a href="#" target="_blank" style="text-decoration: none;color: rgba(139, 46, 46, 0.808);"><p ><img src="https://i.ibb.co/kD4F1rj/52-523676-shopping-bag-icon-png-transparent-png-removebg-preview.png" alt="" style="height: 20px; opacity: 60% ;padding: 3px; "></p> </a></li>
+
+                            </ul>
+
+                        </td>                        
+                    </tr>
+                </table>  
+
+<!-- THE BACK PIC SEC -->
+                <table class="back" style="width: 100%; max-width: 900px; background-color: aliceblue;text-align: left; color: rgb(255, 255, 255);">
+                    <tr>
+                        <td>
+                            <!-- <img class="back2" src="https://news.asu.edu/sites/default/files/istock-1013268108.jpg" alt=""> -->
+                            <h1 class="banner" style="background-color:#ef587468;padding: 10px; position: relative; left: 107px;top: 86px;width: fit-content;font-weight: 100;">GIVE YOUR KID THE BEST <br> POSSIBLE START! </h1>
+                        </td>
+
+            </table>
+
+
+            <table style="width: 100%; max-width: 900px; background-color: #fff3eb;text-align: center; color: rgb(255, 255, 255);">
+            <tr>
+                <td style="display: inline-flex; font-weight: lightr;position: relative; top: -50px;">
+                    <div style="width: 350px; background-color: #00bfb0; padding: 20px; line-height: 29px;height: 121px;">
+                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;">
+                        Our location 
+                    </h3>
+                    <h4  style="font-family:Georgia, 'Times New Roman', Times, serif;font-weight: 100; padding: 6px 0;">
+                        Latitude: 6.31947, Longitude: -17.21401 <br> Latitude: -3.22862, Longitude: -89.62784
+
+                    </h4>
+                    <h5 class="links">
+                        <a href="#" style="font-family:Georgia, 'Times New Roman', Times, serif;text-decoration: none;color: rgba(255, 255, 255, 0.73); text-decoration: underline;">
+                            <span class="links" style="font-family: Georgia, 'Times New Roman', Times, serif;"> Get direction</span></a>
+                    </h5>
+                    </div>
+ 
+
+
+                    <div style="width: 350px; background-color: #ef5874; padding: 20px; line-height: 29px;height: 121px;">
+                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;">
+                        Hours Of Operation
+                    </h3>
+                    <h4  style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: 100; padding: 6px 0;">
+                        Open from 8AM to 7PM, Monday to Friday. <br>  6different programs are available for all ages
+                    </h4>
+                    <h5 class="links">
+                        <a href="#" style="font-family:Georgia, 'Times New Roman', Times, serif;text-decoration: none;color: rgba(255, 255, 255, 0.73); text-decoration: underline;">
+                            <span class="links" style="font-family: Georgia, 'Times New Roman', Times, serif;"> View Different Programs</span></a>
+                    </h5>
+                    </div>
+                </td>
+            </tr>
+            </table>
+<!-- THE 4 CIRCLES SEC -->
+            <table  class="back3" style="width: 100%; max-width: 900px; background-color: #fff3eb;text-align: center; color: rgb(255, 255, 255);    margin-top: -50px;">
+            </table>
+
+            <table style="width: 100%; max-width: 900px; background-color: #fff3eb;text-align: center; color:#ef5874;">
+                <tr>
+                    <td style="display: inline-flex;    width: 738px; padding: 5px 0 33px 0;line-height: 26px;">
+                        <div style="width: 210px;padding: 5px;">
+                            <h3 style="font-weight: 100;">
+                                Young Toddlers 
+                            </h3>
+                            <h4 style="font-weight: 100; color: rgb(139 46 46 / 53%);">
+                                (12 months – 23 months)
+                            </h4>
+                        </div>
+
+                        <div style="width: 210px;padding: 5px;">
+                            <h3 style="font-weight: 100;">
+                                Young Toddlers 
+                            </h3>
+                            <h4 style="font-weight: 100; color: rgb(139 46 46 / 53%);">
+                                (12 months – 23 months)
+                            </h4>
+                        </div>
+
+                        <div style="width: 210px;padding: 5px;">
+                            <h3 style="font-weight: 100;">
+                                Young Toddlers 
+                            </h3>
+                            <h4 style="font-weight: 100; color: rgb(139 46 46 / 53%);">
+                                (12 months – 23 months)
+                            </h4>
+                        </div>
+                        
+                        <div style="width: 220px;padding: 5px;">
+                            <h3 style="font-weight: 100;">
+                                Young Toddlers 
+                            </h3>
+                            <h4 style="font-weight: 100; color: rgb(139 46 46 / 53%);">
+                                (12 months – 23 months)
+                            </h4>
+                        </div>                        
+                    </td>
+                </tr>
+            </table>
+
+<!-- THE TOUR SEC -->
+            <table  style="width: 100%; max-width: 900px; background-color: rgba(255, 255, 255, 0.956);text-align: center; color:#00bfb0;">
+                <tr>
+                    <td> 
+                        <hr width="750px" style="height: 6px; background-color: #00bfb0;display: inline-flex;">
+                    </td>                    
+                </tr>
+
+
+                <tr>
+                    <td style="display: inline-flex;padding-top: 75px;">
+                        <div style="width: 350px;">
+                            <img width="350px" src="https://media.istockphoto.com/id/1402700277/photo/african-american-girl-playing-with-building-blocks-at-the-school.jpg?b=1&s=170667a&w=0&k=20&c=3TkUHf5ydj9es18xWbbgfPFF1-QUNr99MxzErAw4H6o=" alt="">
+                        </div>
+
+
+                        <div style="width: 350px;    padding: 24px 28px;">
+                            <h1 style="font-weight: 100;    margin-top: -10px;">Welcome to the Most Secure Place!</h1>
+                            <h4 style="font-weight: 100;color:rgb(139 46 46 / 53%); padding-top: 10px;">We pride ourselves on being able to provide a happy, safe and inclusive environment in which children are encouraged to explore their potential!</h4>
+                            <h4 style="font-weight: 100;color:white; padding-top: 18px;">
+                              <button style=" color: white ; border-radius: 45px;">
+                                Schedul a tour</a> 
+                              </button></h4>
+                        </div>
+                    </td>
+
+
+
+                    <td style="display: inline-flex; padding-bottom: 75px;">
+
+                        <div style="width: 350px;    padding: 24px 28px;">
+                            <h1 style="font-weight: 100;    margin-top: -10px; width: 400px;position: relative; left: -24px;">Why Bambini is the Best Start?</h1>
+                            <h4 style="font-weight: 100;color:rgb(139 46 46 / 53%); padding-top: 10px;">Our experiential learning environment encourages your child to explore their creativity, develop social skills, and learn academic basics. <br> With our safe and nurturing atmosphere, your little one will gain the confidence to take on any challenge and excel.</h4>
+                            <h4 style="font-weight: 100;color:white; padding-top: 18px;">
+                              <button style=" color: white ; border-radius: 45px;">
+                                View our staff</a> 
+                              </button></h4>
+                        </div>
+
+
+                        <div style="width: 350px;">
+                            <img width="350px" src="https://plus.unsplash.com/premium_photo-1663054240347-39af30a5c291?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>                        
+                    </td>                    
+                </tr>
+            </table>
+
+<!-- EVENTS CALENDER -->
+            <table   class="back4" style="width: 100%; max-width: 900px; background-color:black; text-align: center; color: rgb(255, 255, 255);">
+                <tr>
+                    <td>
+                        <div style="position: relative;top: -22px; height: 371px;">
+
+                        <div>
+                        <h1 style="font-size: 40px;">Events Calendar</h1>
+                        </div>
+
+
+
+                        <div style="padding-left: 11px;padding-top: 10px;">
+                        <div style="color: rgb(255 255 255 / 81%);text-align: left; padding: 31px;font-size: 15px;font-family:Georgia, 'Times New Roman', Times, serif;    padding-bottom: 5px;">
+                            MAY <span style="font-family:Georgia, 'Times New Roman', Times, serif;padding-left: 15px;">MAY 19, 2023 - MAY 18, 2025</span>
+                        </div>
+
+                        <div style="text-align: left;">
+                           <a href="#" style="color: #00bfb0; padding: 0 34px;font-size: 25px;font-family:Georgia, 'Times New Roman', Times, serif; text-decoration: none;"> 19 <span style="font-family:Georgia, 'Times New Roman', Times, serif;padding-left: 15px;">Theater Night</span>
+                        </a></div>
+
+
+
+                        <div>
+                            <div style="color: rgb(255 255 255 / 81%);text-align: left; padding: 31px;font-size: 15px;font-family:Georgia, 'Times New Roman', Times, serif;    padding-bottom: 5px;">
+                                MAY <span style="font-family:Georgia, 'Times New Roman', Times, serif;padding-left: 15px;">MAY 25, 2023 - MAY 4, 2024</span>
+                            </div>
+    
+                            <div style="text-align: left;">
+                               <a href="#" style="color: #00bfb0; padding: 0 34px;font-size: 25px;font-family:Georgia, 'Times New Roman', Times, serif; text-decoration: none;"> 25 <span style="font-family:Georgia, 'Times New Roman', Times, serif;padding-left: 15px;">Field Day </span>
+                            </a></div>
+    
+
+
+
+                            <div>
+                                <div style="color: rgb(255 255 255 / 81%);text-align: left; padding: 31px;font-size: 15px;font-family:Georgia, 'Times New Roman', Times, serif;    padding-bottom: 5px;">
+                                    MAY <span style="font-family:Georgia, 'Times New Roman', Times, serif;padding-left: 15px;">MAY 29, 2023 - MAY 30, 2024</span>
+                                </div>
+        
+                                <div style="text-align: left;">
+                                   <a href="#" style="color: #00bfb0; padding: 0 34px;font-size: 25px;font-family:Georgia, 'Times New Roman', Times, serif; text-decoration: none;"> 30 <span style="font-family:Georgia, 'Times New Roman', Times, serif;padding-left: 15px;">Ice Cream Social</span>
+                                </a></div>
+        
+            
+                         <p class="links" style="text-align: left;padding-top: 15px;"><a href="#" style="padding: 10px 27px;text-decoration: ;color:#008379;font-size: 14px;font-family:Georgia, 'Times New Roman', Times, serif;"><span style="font-family: Georgia, 'Times New Roman', Times, serif;"> View Calendar</span></a></p>       
+
+                    
+                    </div>
+
+                    </div>    
+                    </td>
+                </tr>
+            </table>
+<!-- OUR ACTIVITIES -->
+            <table  style="width: 100%; max-width: 900px; background-color: white;">
+                <tr>
+                    <td style="text-align: center;">
+                <div class="parent" style="display: grid;">
+                    <div style="grid-column: 1/4;font-size: 40px;color: #00bfb0;text-align: center;    padding: 21px 0;">Our Activities</div>
+                    
+                    <div>
+                        <img src="https://i.ibb.co/LZKQBms/fotor-2023-5-6-10-9-33.png" alt="" width="58px" style="padding: 10px;">
+                    <span style="position: absolute; padding: 15px 5px;"> <h2>Painting</h2>  <span style="display: block; font-weight: 100;color:rgb(139 46 46 / 53%) ;">Children learn to paint</span></span>
+                    </div>
+
+                    
+                    <div>
+                        <img src="https://i.ibb.co/4WwGM0K/fotor-2023-5-6-10-3-29.png" alt="" width="58px" style="padding: 10px;">
+                    <span style="position: absolute; padding: 15px 5px;"> <h2>Puppet Centre</h2>  <span style="display: block; font-weight: 100;color:rgb(139 46 46 / 53%) ;">daily puppet shows!</span></span>
+                    </div>
+                    
+                    
+                    <div>
+                        <img src="https://i.ibb.co/1zPzHFd/fotor-2023-5-6-10-6-38.png" alt="" width="58px" style="padding: 10px;">
+                    <span style="position: absolute; padding: 15px 5px;"> <h2>Table/Floor Toys</h2>  <span style="display: block; font-weight: 100;color:rgb(139 46 46 / 53%) ;">What kind of toys your kid <br> prefer?</span></span>
+                    </div>
+                    
+                    
+                    <div>
+                        <img src="https://i.ibb.co/qYkScn6/fotor-2023-5-6-10-10-10.png" alt="" width="58px" style="padding: 10px;">
+                    <span style="position: absolute; padding: 15px 5px;"> <h2>Special Projects</h2>  <span style="display: block; font-weight: 100;color:rgb(139 46 46 / 53%) ;">Our secret area education ways</span></span>
+                    </div>
+                    
+                    
+                    <div>
+                        <img src="https://i.ibb.co/syDC3j8/fotor-2023-5-6-10-5-6.png" alt="" width="58px" style="padding: 10px;">
+                    <span style="position: absolute; padding: 15px 5px;"> <h2>Music & Singing</h2>  <span style="display: block; font-weight: 100;color:rgb(139 46 46 / 53%) ;">let's show your kids talents!</span></span>
+                    </div>
+                    
+                    
+                    <div>
+                        <img src="https://i.ibb.co/ft7MmkR/fotor-2023-5-6-10-7-28.png" alt="" width="58px" style="padding: 10px;">
+                    <span style="position: absolute; padding: 15px 5px;"> <h2>Library Reading</h2>  <span style="display: block; font-weight: 100;color:rgb(139 46 46 / 53%) ;">How many stories our teacher <br> knows?</span></span>
+                    </div>
+                    
+                    
+                    <div>
+                        <img src="https://i.ibb.co/yPdrj6r/fotor-2023-5-6-10-10-52.png" alt="" width="58px" style="padding: 10px;">
+                    <span style="position: absolute; padding: 15px 5px;"> <h2>Sand Play</h2>  <span style="display: block; font-weight: 100;color:rgb(139 46 46 / 53%) ;">All year round we enjoy sand</span></span>
+                    </div>
+                    
+                    
+                    <div>
+                        <img src="https://i.ibb.co/2F4NjTL/fotor-2023-5-6-10-6-5.png" alt="" width="58px" style="padding: 10px;">
+                    <span style="position: absolute; padding: 15px 5px;"> <h2>Storytime</h2>  <span style="display: block; font-weight: 100;color:rgb(139 46 46 / 53%) ;">Where learning is a more fun</span></span>
+                    </div>
+                      
+                    
+                    <div>
+                        <img src="https://i.ibb.co/HPK3ptc/fotor-2023-5-6-10-8-22.png" alt="" width="58px" style="padding: 10px;">
+                    <span style="position: absolute; padding: 15px 5px;"> <h2>Water Play</h2>  <span style="display: block; font-weight: 100;color:rgb(139 46 46 / 53%) ;">various water activities</span></span>
+                    </div>
+                    
+                    </td>
+                </tr>
+
+            </table>
+
+<!-- ABOUT OUR TEACHERS -->
+            <table  style="width: 100%; max-width: 900px; background-color: white;text-align: center;">
+                <tr>
+                    <td style="height: 500px;">
+                        <hr width="750px" style="height: 6px; background-color:#008379;display: inline-flex;">
+
+                        <p style="font-size: 40px;color: #00bfb0;text-align: center;    padding: 7px 0;">About the Teachers</p>
+                        <p style="padding: 0 20px 38px 20px;color:rgb(139 46 46 / 53%) ;font-weight: 100;">We have an excellent teacher to child ratio at our Kindergarten to ensure that each child <br> receives the attention he or she needs</p>
+
+
+                        <div style="width: 252px;     height: 408px;">
+                            <div class="scene">
+                                <div class="cube">
+                                  <span class="side top"><img style="width: 50px; height: 80px;padding-top: 94px;" src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bf66f6b68c7d56b399_black-twitter.png" alt="">
+                                    <img style="width: 50px; height: 80px;padding-top: 94px;" src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bf5a4c3613c652a778_black-facebook.png" alt="">
+                                    <img style="width: 50px; height: 80px;padding-top: 94px;" src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bec5846871e0a17554_black-linkedin.png" alt="">
+                                </span>
+                                  
+                                  
+                                  
+                                  <span class="side front">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" style="width:inherit; height: 299px;opacity: 90%;" alt="">
+                                    <p  style="width: 224px;     height: 40px;position: relative; background-color:rgb(241, 229, 220);;color:#00bfb0;font-weight: 100;">Max Turner <br><span style="color:rgb(139 46 46 / 53%);text-transform: none;">Art Teacher</span></p>
+                                </span>
+                                </div>
+                              </div>
+
+
+                              <div style="width: 252px;     height: 408px;position: relative; left: 250px; bottom: 64px;:">
+                                <div class="scene">
+                                    <div class="cube">
+                                      <span class="side top"><img style="width: 50px; height: 80px;padding-top: 94px;" src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bf66f6b68c7d56b399_black-twitter.png" alt="">
+                                        <img style="width: 50px; height: 80px;padding-top: 94px;" src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bf5a4c3613c652a778_black-facebook.png" alt="">
+                                        <img style="width: 50px; height: 80px;padding-top: 94px;" src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bec5846871e0a17554_black-linkedin.png" alt="">
+                                    </span>
+                                      
+                                      
+                                      
+                                      <span class="side front">
+                                        <img src="https://i.ibb.co/JFkPtPD/Screenshot-2023-05-07-115021.png" style="width:inherit; height: 299px;opacity: 90%;" alt="">
+                                        <p  style="width: 224px;     height: 40px;position: relative; background-color:rgb(241, 229, 220);;color:#00bfb0;font-weight: 100;">Amy Adams <br><span style="color:rgb(139 46 46 / 53%);text-transform: none;">Music Teacher</span></p>
+                                      </span>
+                                    </div>
+                                  </div>
+
+
+                                  <div style="width: 252px;     height: 408px;position: relative; left: 250px; bottom: 64px;:">
+                                    <div class="scene">
+                                        <div class="cube">
+                                          <span class="side top"><img style="width: 50px; height: 80px;padding-top: 94px;" src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bf66f6b68c7d56b399_black-twitter.png" alt="">
+                                            <img style="width: 50px; height: 80px;padding-top: 94px;" src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bf5a4c3613c652a778_black-facebook.png" alt="">
+                                            <img style="width: 50px; height: 80px;padding-top: 94px;" src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bec5846871e0a17554_black-linkedin.png" alt="">
+                                        </span>
+                                          
+                                          
+                                          
+                                          <span class="side front">
+                                            <img src="https://i.ibb.co/PtjKTW0/Screenshot-2023-05-07-115143.png" style="width:inherit; height: 299px;opacity: 90%;" alt="">
+                                        <p  style="width: 224px;     height: 40px;position: relative; background-color:rgb(241, 229, 220);;color:#00bfb0;font-weight: 100;">Alice Bohm <br><span style="color:rgb(139 46 46 / 53%);text-transform: none;">Senior Educator</span></p>
+                                          </span>
+                                        </div>
+
+                                      </div>
+        
+                                   
+                           
+
+                    </td>
+                </tr>
+            </table>
+
+
+<!-- FOOTER -->
+            <table style=" width: 100%; max-width: 900px; background-color:#413737; text-align: left; color: rgb(255, 255, 255);">
+                <tr>
+                    <td style="display: inline-flex;">
+
+                        <div style="width: 168.75px;padding: 45px;    padding-right: 0;">
+                            <h3>About Us</h3>
+                            <h4 style="font-weight: 100;line-height: 30px;padding-top: 10px;color:rgb(141 135 135);">In 1996, a dedicated educator
+                                from New York, Sinok Park,
+                                founded The Best Kindergarten
+                                for working parents in New York
+                                metropolitan area.</h4>
+                        </div>
+
+
+                        <div style="width: 168.75px;padding: 45px;    padding-right: 0;">
+                            <h3>Quick Links</h3>
+                        
+                            <h4 style="font-weight: 100;line-height: 30px;padding-top: 10px;color:rgb(141 135 135);">
+                            <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                              <p class="footer" > Our Kindergarten<br>
+                             </p></a>
+                        
+                             <h4 style="font-weight: 100;line-height: 30px;padding-top: 0px;color:rgb(141 135 135);">
+                                <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                                  <p class="footer" > Latest News<br>
+                                 </p></a>
+                        
+                                 <h4 style="font-weight: 100;line-height: 30px;padding-top: 0px;color:rgb(141 135 135);">
+                                    <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                                      <p class="footer" >Upcoming Events<br>
+                                     </p></a>
+                        
+                                     <h4 style="font-weight: 100;line-height: 30px;padding-top: 0px;color:rgb(141 135 135);">
+                                        <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                                          <p class="footer" > Contacts
+                                            <br>
+                                         </p></a>                               
+                        </h4>
+                        </div>
+
+
+                        <div style="width: 168.75px;padding: 45px;    padding-right: 0;">
+                            <h3>Keep in Touch</h3>
+                        
+                            <h4 style="font-weight: 100;line-height: 30px;padding-top: 10px;color:rgb(141 135 135);">
+                            <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                              <p class="footer" >Twitter<br>
+                             </p></a>
+                        
+                             <h4 style="font-weight: 100;line-height: 30px;padding-top: 0px;color:rgb(141 135 135);">
+                                <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                                  <p class="footer" >Youtube<br>
+                                 </p></a>
+                        
+                                 <h4 style="font-weight: 100;line-height: 30px;padding-top: 0px;color:rgb(141 135 135);">
+                                    <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                                      <p class="footer" >Instagram<br>
+                                     </p></a>
+                        
+                                     <h4 style="font-weight: 100;line-height: 30px;padding-top: 0px;color:rgb(141 135 135);">
+                                        <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                                          <p class="footer" >Snapchat
+                                            <br>
+                                         </p></a>                               
+                        </h4>
+                        </div>
+
+
+                        <div style="width: 168.75px;padding: 45px;">
+                            <h3>Contact Us</h3>
+                        
+                            <h4 style="font-weight: 100;line-height: 30px;padding-top: 10px;color:rgb(141 135 135);">
+                            <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                              <p class="footer" >
+                                <img src="https://i.ibb.co/5Ldy1sN/fotor-2023-5-7-20-2-22.png" alt="" width="30px" style=" position: relative; margin-right: -7px;right: 5px; top: 9px;">
+                                Brooklyn, NY 10036<br>
+                             </p></a>
+                        
+                             <h4 style="font-weight: 100;line-height: 30px;padding-top: 0px;color:rgb(141 135 135);">
+                                <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                                  <p class="footer" >
+                                <img src="https://i.ibb.co/hR4GxmD/fotor-2023-5-7-20-3-23.png" alt="" width="30px" style=" position: relative; margin-right: -7px;right: 5px; top: 9px;">
+
+                                    bambini@gmail.com<br>
+                                 </p></a>
+                        
+                                 <h4 style="font-weight: 100;line-height: 30px;padding-top: 0px;color:rgb(141 135 135);">
+                                    <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                                      <p class="footer" >
+                                <img src="https://i.ibb.co/CnCYNhv/fotor-2023-5-7-20-3-48.png" alt="" width="30px" style=" position: relative; margin-right: -7px;right: 5px; top: 9px;">
+
+                                    Monday-Friday: <br> <span style="padding-left: 26px;">9:00 am-10:00 pm</span><br>
+                                     </p></a>
+
+                                     
+                                     <h4 style="font-weight: 100;line-height: 30px;padding-top: 0px;color:rgb(141 135 135);">
+                                        <a class="footer" href="#" target="_blank" style="text-decoration: none;font-weight: 100;line-height: 30px;padding-top: 10px;color: rgb(141 135 135);;">
+                                          <p class="footer" >
+                                    <img src="https://i.ibb.co/vQhRsj8/fotor-2023-5-7-20-2-57.png" alt="" width="30px" style=" position: relative; margin-right: -7px;right: 5px; top: 9px;">
+    
+                                    Call us: 1-800-123-1234  <br>
+                                         </p></a>
+                                                           
+                        </h4>
+                        </div>
+                    </td>
+
+
+                </tr>
+                    <td>
+                        <hr width="750px" style="height: 2px; background-color:rgb(141 135 135 / 26%);display: block;margin-left: 69px;">
+
+                        <p style="padding: 45px;    padding-bottom: 0;"><img src="https://i.ibb.co/4SBkDW3/Screenshot-2023-04-29-113559-1.png" alt="" style="width: 120px;"></p>
+                    
+
+                        <ul style="display: inline-flex;    position: relative;  bottom: 49px; left: 739px;" class="social">
+                            <li><a href="#" target="_blank"> <img src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998be6c0719f2223a2f9b_white-instagram.png"  alt="" width="23" style="padding: 3px 0;"></a></li>
+                            <li><a href="#" target="_blank"> <img src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998bf675bc65a04b74fd3_white-twitter.png"  alt="" width="23" style="padding: 3px 0;"></a></li>
+                            <li><a href="#" target="_blank"> <img src="https://uploads-ssl.webflow.com/63d998485a4c3638b7529e6e/63d998cde536112f85d7271e_white-youtube.png"  alt="" width="23" style="padding: 3px 0;"></a></li>
+                         </ul>
+              
+                    
+                    </td>   
+                    
+                    
+
+                </tr>
+            </table>
+            
+        </table>
+    </center>
+</body> 
+</html>   
