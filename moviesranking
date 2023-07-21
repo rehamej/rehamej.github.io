@@ -1,0 +1,413 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+  <title>Sliding Gallery</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width , intial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" type="text/css" href="path/to/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="path/to/slick/slick-theme.css">
+  <script src="JS task.js" defer></script>
+
+
+  <style>
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left: -250px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+ color: rgb(246, 214, 214);
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  /* font-weight: bold; */
+  background-color: #151726a7;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+* {
+
+margin: 0;
+padding: 0;
+border: 0;
+border-spacing: 0;
+text-decoration: none;
+
+}
+
+
+:root{
+    --main-padding:10px;
+}
+
+
+body {
+    margin: 0;
+    background-color:rgba(201, 184, 184, 0.745);
+    font-family:Arial, Helvetica, sans-serif;
+} 
+
+img{
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+.container{
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    /* height: 100vh; */
+    /* width: 100%;  */
+    max-width: 900px; 
+    background-color:#151726;
+    font-size: 50%;
+    color: whitesmoke;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-template-rows:
+    0.5fr
+        1fr 
+        7fr ;
+    grid-template-areas:
+   "nav1 nav1 nav1"
+   "nav2 nav2 nav2"      
+   "main main main";
+}
+
+
+
+.nav1{
+    grid-area: nav1;
+    display: inline-flex;
+    padding: 0px 94px;
+    /* margin-left: 114px; */
+    background-color: #151726;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropbtn {
+    background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #151726;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+    color: #dacdcd;
+    font-size: 20px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #13112e;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+.nav1 > p {
+    padding: 6px 10px;
+    font-size: 2vh;
+    display: inline-flex;
+    align-items: center;
+}
+.input {
+ color: #2b2c42;
+ border: 1.5px solid #2b2c42;
+ border-radius: 10px;
+ padding: 3px 28px 3px 17px;
+ background: transparent;
+ max-width: 190px;
+ box-shadow: 2px 2px 15px #7407daea inset;
+}
+
+.input:active {
+ box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.icon {
+ /* position: absolute; */
+ left: 9rem;
+ fill: #9e9ea7;
+ width: 1rem;
+ height: 1rem;
+}
+.group {
+ display: flex;
+ line-height: 28px;
+ align-items: center;
+ position: relative;
+ max-width: 190px;
+ left: 700px;
+
+}
+
+.hover:hover{
+    opacity: 50%;
+    background-color: #8707ff;
+    color: #8707ff;
+  transition: 0.5s;
+ display:block;
+}
+
+.menu {
+  width: 35px;
+  height: 2px;
+  background-color:whitesmoke;
+  margin: 6px 0;
+  margin-left: 25px;
+  max-width: 35px;
+
+}
+
+.show:hover ul.list-categories{
+  max-height: inherit;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.list-categories{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 300ms ease;
+}
+
+
+
+
+.nav2{
+    grid-area: nav2;
+    padding: 55px 60px 48px 60px;
+    text-align: left;
+    font-size: 4vh;
+    font-weight: 700;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
+
+main{
+    grid-area: main;
+    /* text-align: center; */
+    /* background-size: cover; */
+    position: relative;
+    /* display: inline-flex; */
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    padding: 0 8.5%;
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <!-- SEARCH BAR -->
+        <nav class=" nav1">
+
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">
+                    
+                    <div class="menu"></div>
+                    <div class="menu" style="width: 25px;"></div>
+                    <div class="menu"></div>
+                </button>
+                <div class="dropdown-content" style="left:0;">
+                  <a href="#">In theaters</a>
+                  <a href="#">Box office</a>
+                  <!-- <a href="#">Link 3</a> -->
+                </div>
+              </div>
+
+
+              
+<div class="dropdown" style="float:right;">
+    <button class="dropbtn"> <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg></button>
+  </div>
+
+        </nav>
+
+
+        <!-- NAV2 -->
+        <nav class="nav2">
+
+            <div class="hover div1" style="    padding: 0 10px; display: flex; font-size: 1.9vh; border-radius:14px; width: fit-content; background-color:#100f1a;align-items: center; overflow: hidden; white-space: nowrap; border-color:">
+                <a href="#"  style=" font-weight: 700;    padding: 13px 17px; width: fit-content;text-decoration: none;color:whitesmoke;">Comedy</a> 
+            </div>
+
+            <div class="hover div1" style="    padding: 0 10px;display: flex; font-size: 1.6vh; : 16px 16px 16px 16px; border-radius:14px; width: fit-content;background-color: #100f1a;align-items: center; overflow: hidden; white-space: nowrap;">
+                <a href="#"  style=" font-weight: 700;    padding: 13px 17px; width: fit-content;text-decoration: none;color:whitesmoke;">Crime</a> 
+            </div>
+
+            <div class="hover div1" style="    padding: 0 10px;display: flex; font-size: 1.9vh; : 16px 16px 16px 16px; border-radius:14px; width: fit-content;background-color: #100f1a;align-items: center; overflow: hidden; white-space: nowrap;">
+                <a href="#"  style=" font-weight: 700;    padding: 13px 17px; width: fit-content;text-decoration: none;color:whitesmoke;">Ation</a> 
+            </div>
+
+            <div class="hover div1" style="    padding: 0 10px;display: flex; font-size: 1.9vh; : 16px 16px 16px 16px; border-radius:14px; width: fit-content;background-color: #100f1a;align-items: center; overflow: hidden; white-space: nowrap;">
+                <a href="#"  style=" font-weight: 700;    padding: 13px 17px; width: fit-content;text-decoration: none;color:whitesmoke;">Drama</a> 
+            </div>
+        </nav>
+
+
+
+  <main>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV9NZu6xR9Ngionw1EMXdOD3wOwVQ4RgswFd1ttoyKCdGoDQQN" style="width:100% ;border-radius: 9px;box-shadow: 0px 0px 26px 3px rgb(135, 5, 5);">
+      <div class="text">Spider-man <br>across the soider-universe  
+        <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png" alt="" style="width: 15px;"> <span style="font-size: 15px; color: rgba(245, 245, 245, 0.786);">8.4</span>
+    </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9GQZiWRkp6yyr5ak7ydC9n1zMHV9EPFRqL87XKdn9V7Xo-I7D" style="width:100%; border-radius: 9px;box-shadow: 0px 0px 26px 3px rgb(135, 5, 5);">
+      <div class="text">Mission impossible
+        <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png" alt="" style="width: 15px;"> <span style="font-size: 15px; color: rgba(245, 245, 245, 0.786);">8.1</span>
+      </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://de.web.img3.acsta.net/r_1280_720/pictures/23/05/08/10/29/0695770.jpg" style="width:100% ;border-radius: 9px;box-shadow: 0px 0px 26px 3px rgb(135, 5, 5);">
+      <div class="text">Oppenheimer
+        <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png" alt="" style="width: 15px;"> <span style="font-size: 15px; color: rgba(245, 245, 245, 0.786);">9.4</span>
+      </div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</main>  
+
+</body>
+</html>
