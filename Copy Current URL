@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Current URL</title>
+</head>
+<body>
+
+
+    <!-- Button to trigger the URL copying -->
+    <button onclick="copyCurrentURL()">Copy URL</button>
+
+    <script>
+        // JavaScript code goes here (the function and logic you provided earlier)
+        function copyCurrentURL() {
+            // Get the current URL
+            const currentURL = window.location.href;
+
+            // Create a temporary input element to hold the URL
+            const tempInput = document.createElement('input');
+            tempInput.value = currentURL;
+
+            // Append the input element to the document (it doesn't need to be visible)
+            document.body.appendChild(tempInput);
+
+            // Select the URL text in the input element
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the selected text to the clipboard
+            document.execCommand('copy');
+
+            // Remove the temporary input element
+            document.body.removeChild(tempInput);
+
+            // Optionally, you can provide feedback to the user
+            alert('URL copied to clipboard: ' + currentURL);
+        }
+    </script>
+</body>
+</html>
+
